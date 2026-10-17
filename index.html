@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>:root{--background:#0f172a;--card:#1e293b;--foreground:#f8fafc;--muted-foreground:#94a3b8;--border:#334155;--accent:#334155}@media(prefers-color-scheme:light){:root{--background:#f8fafc;--card:#ffffff;--foreground:#0f172a;--muted-foreground:#64748b;--border:#e2e8f0;--accent:#f1f5f9}}</style>
+<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js; frame-src 'none'; object-src 'none'"><style>:root { --background: #F9F9F9; --foreground: #101010; --primary: #007acc; --primary-foreground: #F9F9F9; --secondary: color-mix(in srgb, #000000 6%, #F9F9F9); --secondary-foreground: color-mix(in srgb, #101010 75%, #F9F9F9); --muted: color-mix(in srgb, #000000 2.5%, #F9F9F9); --muted-foreground: color-mix(in srgb, #101010 50%, #F9F9F9); --placeholder: color-mix(in srgb, #101010 30%, #F9F9F9); --sidebar: color-mix(in srgb, #000000 2.5%, #F9F9F9); --sidebar-secondary: color-mix(in srgb, #000000 6%, color-mix(in srgb, #000000 2.5%, #F9F9F9)); --sidebar-muted: color-mix(in srgb, #000000 2.5%, color-mix(in srgb, #000000 2.5%, #F9F9F9)); --content: #F9F9F9; --card: color-mix(in srgb, #F9F9F9 70%, #ffffff); --border: rgba(0, 0, 0, 0.075); --accent: #007acc; --theme-type: light; --font-size: 13px; } html, body { margin: 0; padding: 0; overflow: hidden; color-scheme: light; background-color: transparent; color: var(--foreground, inherit); font-family: var(--font-family, sans-serif); font-size: var(--font-size, 13px); }</style><style>html, body { height: auto !important; min-height: 0 !important; overflow: auto !important; } body { display: flow-root; position: relative !important; }</style><script>(function(){var t=window.tailwind=window.tailwind||{};if(!t.config){t.config={darkMode:'class'};}else if(t.config.darkMode!=='class'){t.config.darkMode='class';}})();document.addEventListener('DOMContentLoaded',function(){(function(){var t=window.tailwind=window.tailwind||{};if(!t.config){t.config={darkMode:'class'};}else if(t.config.darkMode!=='class'){t.config.darkMode='class';}})();});window.addEventListener('load',function(){(function(){var t=window.tailwind=window.tailwind||{};if(!t.config){t.config={darkMode:'class'};}else if(t.config.darkMode!=='class'){t.config.darkMode='class';}})();});</script><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.bottom-2\.5{bottom:0.625rem}.right-1\.5{right:0.375rem}.right-2\.5{right:0.625rem}.top-1\/2{top:50%}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.mb-1{margin-bottom:0.25rem}.mb-2\.5{margin-bottom:0.625rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-2\.5{margin-top:0.625rem}.mt-4{margin-top:1rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-48{height:12rem}.h-56{height:14rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-12{width:3rem}.w-48{width:12rem}.w-full{width:100%}.max-w-5xl{max-width:64rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-7{grid-template-columns:repeat(7, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-3\.5{gap:0.875rem}.gap-4{gap:1rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-\[var\(--border\)\]{border-color:var(--border)}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-amber-500\/40{border-color:rgb(245 158 11 / 0.4)}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-sky-500\/30{border-color:rgb(14 165 233 / 0.3)}.border-teal-500\/30{border-color:rgb(20 184 166 / 0.3)}.border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.bg-\[var\(--background\)\]{background-color:var(--background)}.bg-\[var\(--card\)\]{background-color:var(--card)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-500\/15{background-color:rgb(245 158 11 / 0.15)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-purple-500\/15{background-color:rgb(168 85 247 / 0.15)}.bg-sky-500\/15{background-color:rgb(14 165 233 / 0.15)}.bg-teal-500\/15{background-color:rgb(20 184 166 / 0.15)}.p-1\.5{padding:0.375rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-2\.5{padding:0.625rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pl-3{padding-left:0.75rem}.pr-8{padding-right:2rem}.pt-1{padding-top:0.125rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-\[var\(--foreground\)\]{color:var(--foreground)}.text-\[var\(--muted-foreground\)\]{color:var(--muted-foreground)}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.text-purple-500{--tw-text-opacity:1;color:rgb(168 85 247 / var(--tw-text-opacity, 1))}.text-sky-500{--tw-text-opacity:1;color:rgb(14 165 233 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-teal-500{--tw-text-opacity:1;color:rgb(20 184 166 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.placeholder-\[var\(--muted-foreground\)\]::placeholder{color:var(--muted-foreground)}.accent-amber-500{accent-color:#f59e0b}.accent-sky-500{accent-color:#0ea5e9}.accent-teal-500{accent-color:#14b8a6}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:border-amber-500\/40:hover{border-color:rgb(245 158 11 / 0.4)}.hover\:border-amber-500\/50:hover{border-color:rgb(245 158 11 / 0.5)}.hover\:border-purple-500\/40:hover{border-color:rgb(168 85 247 / 0.4)}.hover\:border-sky-500\/40:hover{border-color:rgb(14 165 233 / 0.4)}.hover\:border-teal-500\/40:hover{border-color:rgb(20 184 166 / 0.4)}.hover\:bg-\[var\(--accent\)\]:hover{background-color:var(--accent)}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-500\/10:hover{background-color:rgb(245 158 11 / 0.1)}.hover\:bg-amber-500\/25:hover{background-color:rgb(245 158 11 / 0.25)}.hover\:bg-emerald-500\/25:hover{background-color:rgb(16 185 129 / 0.25)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-amber-500\/50:focus{--tw-ring-color:rgb(245 158 11 / 0.5)}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:w-64{width:16rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-2\.5{gap:0.625rem}.sm\:p-4{padding:1rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}}@media (min-width: 1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased min-h-screen p-3 sm:p-6">
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather FourCats — Daily Feline Forecast</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes shiver {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-2px) rotate(-0.8deg); }
+      75% { transform: translateX(2px) rotate(0.8deg); }
+    }
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes rainFall {
+      0% { transform: translateY(-12px); opacity: 0; }
+      40% { opacity: 1; }
+      100% { transform: translateY(18px); opacity: 0; }
+    }
+    @keyframes snowFall {
+      0% { transform: translateY(-10px) translateX(-3px); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(18px) translateX(4px); opacity: 0; }
+    }
+    @keyframes windStreak {
+      0% { transform: translateX(-18px); opacity: 0; }
+      50% { opacity: 0.85; }
+      100% { transform: translateX(22px); opacity: 0; }
+    }
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(-6deg); }
+      50% { transform: rotate(8deg); }
+    }
+    @keyframes steamRise {
+      0% { transform: translateY(4px); opacity: 0.2; }
+      50% { opacity: 0.85; }
+      100% { transform: translateY(-8px); opacity: 0; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.85; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.06); }
+    }
+    .anim-float { animation: floatSlow 3.4s ease-in-out infinite; }
+    .anim-shiver { animation: shiver 0.28s ease-in-out infinite; }
+    .anim-spin { animation: spinSlow 9s linear infinite; transform-origin: center; }
+    .anim-spin-fast { animation: spinSlow 1.2s linear infinite; transform-origin: center; }
+    .anim-rain-1 { animation: rainFall 1.1s linear infinite; }
+    .anim-rain-2 { animation: rainFall 1.1s linear 0.35s infinite; }
+    .anim-rain-3 { animation: rainFall 1.1s linear 0.7s infinite; }
+    .anim-snow-1 { animation: snowFall 2.2s ease-in-out infinite; }
+    .anim-snow-2 { animation: snowFall 2.2s ease-in-out 0.8s infinite; }
+    .anim-wind-1 { animation: windStreak 1.4s ease-in-out infinite; }
+    .anim-wind-2 { animation: windStreak 1.4s ease-in-out 0.55s infinite; }
+    .anim-steam { animation: steamRise 2s ease-out infinite; }
+    .anim-sun { animation: pulseGlow 3s ease-in-out infinite; transform-origin: center; }
+    .cat-stage {
+      transition: background 0.35s ease;
+    }
+    /* Custom subtle scrollbars for forecast strip */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+
+
+  <div class="max-w-5xl mx-auto space-y-5">
+
+    <!-- HEADER BAR -->
+    <header class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <!-- Brand & Title -->
+        <div class="flex items-center gap-3.5">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-2xl shrink-0 shadow-inner">
+            🐾
+          </div>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight text-[var(--foreground)]">
+                Weather FourCats
+              </h1>
+              <span id="dataSourceBadge" class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-500 border border-emerald-500/30">● Live Daily Weather</span>
+            </div>
+            <p class="text-xs sm:text-sm text-[var(--muted-foreground)]">
+              Four cats dressed for the day’s temperature, rain chance, wind speed &amp; sky
+            </p>
+          </div>
+        </div>
+
+        <!-- Location Search & Home Controls -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+          <form id="searchForm" class="flex items-center gap-1.5 flex-1 sm:w-64">
+            <div class="relative flex-1">
+              <input id="cityInput" type="text" placeholder="Search any city (e.g., Tokyo, Paris)..." class="w-full bg-[var(--background)] text-[var(--foreground)] placeholder-[var(--muted-foreground)] text-sm rounded-xl pl-3 pr-8 py-2 border border-[var(--border)] focus:outline-none focus:ring-2 focus:ring-amber-500/50">
+              <button type="submit" title="Search City" class="absolute right-1.5 top-1/2 -translate-y-1/2 px-2 py-1 text-xs rounded-lg bg-amber-500 text-slate-950 font-semibold hover:bg-amber-400 transition">
+                Go
+              </button>
+            </div>
+          </form>
+
+          <div class="flex items-center gap-1.5">
+            <button id="goHomeBtn" type="button" title="Switch to your saved Home location" class="px-3 py-2 rounded-xl text-xs font-semibold border border-[var(--border)] bg-[var(--background)] hover:bg-amber-500/10 hover:border-amber-500/40 transition flex items-center gap-1.5">
+              <span>🏠</span>
+              <span id="homeBtnLabel">Home (Toronto)</span>
+            </button>
+
+            <button id="setHomeBtn" type="button" title="Save current city as your default Home" class="px-3 py-2 rounded-xl text-xs font-semibold border border-amber-500/40 bg-amber-500/15 text-amber-500 hover:bg-amber-500/25 transition flex items-center gap-1">
+              <span>⭐</span>
+              <span id="setHomeBtnText">Saved as Home</span>
+            </button>
+
+            <button id="sandboxToggleBtn" type="button" title="Test different outfits with sliders" class="px-3 py-2 rounded-xl text-xs font-semibold border border-[var(--border)] bg-[var(--background)] hover:bg-[var(--accent)] transition flex items-center gap-1">
+              <span>🎛️</span>
+              <span class="hidden sm:inline">Try Outfits</span>
+            </button>
+
+            <button id="copyHtmlBtn" type="button" title="Copy full HTML code to paste into GitHub index.html" class="px-3 py-2 rounded-xl text-xs font-semibold border border-emerald-500/40 bg-emerald-500/15 text-emerald-500 hover:bg-emerald-500/25 transition flex items-center gap-1">
+              <span>📋</span>
+              <span id="copyHtmlBtnText">Copy HTML</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Location & Quick Presets Row -->
+      <div class="mt-4 pt-3 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="font-semibold text-[var(--muted-foreground)]">📍 Viewing:</span>
+          <span id="currentLocationName" class="text-sm font-bold text-[var(--foreground)]">Toronto, Canada</span>
+          <span id="isHomePill" class="text-[11px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-500 border border-amber-500/30 font-semibold">
+            🏠 Default Home
+          </span>
+          <span id="activeDateLabel" class="text-[var(--muted-foreground)] font-medium ml-1">• Saturday, Oct 17</span>
+        </div>
+
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <span class="text-[var(--muted-foreground)] mr-1">Quick jump:</span>
+          <button type="button" data-city="Toronto" class="quick-city px-2 py-0.5 rounded-lg border border-[var(--border)] hover:border-amber-500/50 transition">Toronto</button>
+          <button type="button" data-city="London" class="quick-city px-2 py-0.5 rounded-lg border border-[var(--border)] hover:border-amber-500/50 transition">London</button>
+          <button type="button" data-city="Tokyo" class="quick-city px-2 py-0.5 rounded-lg border border-[var(--border)] hover:border-amber-500/50 transition">Tokyo</button>
+          <button type="button" data-city="Sydney" class="quick-city px-2 py-0.5 rounded-lg border border-[var(--border)] hover:border-amber-500/50 transition">Sydney</button>
+          <button type="button" data-city="Reykjavik" class="quick-city px-2 py-0.5 rounded-lg border border-[var(--border)] hover:border-amber-500/50 transition">Reykjavik</button>
+          <button type="button" data-city="Cairo" class="quick-city px-2 py-0.5 rounded-lg border border-[var(--border)] hover:border-amber-500/50 transition">Cairo</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SANDBOX DRAWER (Hidden by default, lets user test any weather) -->
+    <section id="sandboxPanel" class="hidden bg-[var(--card)] border border-amber-500/40 rounded-2xl p-4 shadow-sm space-y-3">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-sm font-bold flex items-center gap-1.5">
+            <span>🎛️</span> Cat Outfit &amp; Weather Simulator
+          </h2>
+          <p class="text-xs text-[var(--muted-foreground)]">
+            Drag sliders to preview how the FourCats dress and react across extreme weather!
+          </p>
+        </div>
+        <button id="resetSandboxBtn" type="button" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-amber-500/15 text-amber-500 border border-amber-500/30 hover:bg-amber-500/25">
+          Back to Daily Forecast
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1">
+        <!-- Temp slider -->
+        <div class="bg-[var(--background)] p-3 rounded-xl border border-[var(--border)]">
+          <div class="flex justify-between text-xs font-semibold mb-1">
+            <span>🌡️ Temperature</span>
+            <span id="simTempVal" class="text-amber-500">10°C</span>
+          </div>
+          <input id="simTemp" type="range" min="-15" max="40" value="18" class="w-full accent-amber-500">
+          <div class="flex justify-between text-[10px] text-[var(--muted-foreground)] mt-0.5">
+            <span>-15°C (Parka)</span>
+            <span>40°C (Pool)</span>
+          </div>
+        </div>
+
+        <!-- Rain slider -->
+        <div class="bg-[var(--background)] p-3 rounded-xl border border-[var(--border)]">
+          <div class="flex justify-between text-xs font-semibold mb-1">
+            <span>☔ Rain Probability</span>
+            <span id="simRainVal" class="text-sky-500">3%</span>
+          </div>
+          <input id="simRain" type="range" min="0" max="100" value="20" class="w-full accent-sky-500">
+          <div class="flex justify-between text-[10px] text-[var(--muted-foreground)] mt-0.5">
+            <span>0% (Dry Box)</span>
+            <span>100% (Downpour)</span>
+          </div>
+        </div>
+
+        <!-- Wind slider -->
+        <div class="bg-[var(--background)] p-3 rounded-xl border border-[var(--border)]">
+          <div class="flex justify-between text-xs font-semibold mb-1">
+            <span>💨 Wind Speed</span>
+            <span id="simWindVal" class="text-teal-500">18 kph</span>
+          </div>
+          <input id="simWind" type="range" min="0" max="85" value="15" class="w-full accent-teal-500">
+          <div class="flex justify-between text-[10px] text-[var(--muted-foreground)] mt-0.5">
+            <span>0 kph (Nap)</span>
+            <span>85 kph (Gale)</span>
+          </div>
+        </div>
+
+        <!-- Sky selector -->
+        <div class="bg-[var(--background)] p-3 rounded-xl border border-[var(--border)]">
+          <div class="flex justify-between text-xs font-semibold mb-1">
+            <span>🌤️ Sky Condition</span>
+          </div>
+          <select id="simSky" class="w-full bg-[var(--card)] text-[var(--foreground)] text-xs rounded-lg p-1.5 border border-[var(--border)]">
+            <option value="0">☀️ Sunny &amp; Clear</option>
+            <option value="2">⛅ Partly Cloudy</option>
+            <option value="3">☁️ Overcast Clouds</option>
+            <option value="45">🌫️ Foggy &amp; Misty</option>
+            <option value="61">🌧️ Rainy Showers</option>
+            <option value="71">❄️ Snowy</option>
+            <option value="95">⛈️ Thunderstorm</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7-DAY DAILY FORECAST SELECTOR -->
+    <section class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-3.5 sm:p-4 shadow-sm">
+      <div class="flex items-center justify-between mb-2.5">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)] flex items-center gap-1.5">
+          <span>📅</span> 7-Day Daily Cat Forecast (Click any day to dress the cats)
+        </h2>
+        <span id="updatedStamp" class="text-[11px] text-[var(--muted-foreground)]">Updated daily</span>
+      </div>
+      <div id="forecastStrip" class="grid grid-cols-7 gap-1.5 sm:gap-2.5 overflow-x-auto no-scrollbar"><button type="button" class="flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition bg-amber-500/15 border-amber-500 text-[var(--foreground)] shadow-sm">
+          <span class="text-[11px] font-bold text-amber-500">Today</span>
+          <span class="text-xl my-1">☁️</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">10°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">3% ☔ • 18 kph</div>
+        </button><button type="button" class="flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition bg-[var(--background)] border-[var(--border)] text-[var(--muted-foreground)] hover:border-amber-500/40">
+          <span class="text-[11px] font-bold ">Tomorrow</span>
+          <span class="text-xl my-1">☀️</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">16°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">0% ☔ • 25 kph</div>
+        </button><button type="button" class="flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition bg-[var(--background)] border-[var(--border)] text-[var(--muted-foreground)] hover:border-amber-500/40">
+          <span class="text-[11px] font-bold ">Mon</span>
+          <span class="text-xl my-1">☁️</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">19°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">0% ☔ • 17 kph</div>
+        </button><button type="button" class="flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition bg-[var(--background)] border-[var(--border)] text-[var(--muted-foreground)] hover:border-amber-500/40">
+          <span class="text-[11px] font-bold ">Tue</span>
+          <span class="text-xl my-1">⛅</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">16°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">0% ☔ • 14 kph</div>
+        </button><button type="button" class="flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition bg-[var(--background)] border-[var(--border)] text-[var(--muted-foreground)] hover:border-amber-500/40">
+          <span class="text-[11px] font-bold ">Wed</span>
+          <span class="text-xl my-1">☀️</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">12°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">0% ☔ • 14 kph</div>
+        </button><button type="button" class="flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition bg-[var(--background)] border-[var(--border)] text-[var(--muted-foreground)] hover:border-amber-500/40">
+          <span class="text-[11px] font-bold ">Thu</span>
+          <span class="text-xl my-1">⛅</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">17°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">1% ☔ • 14 kph</div>
+        </button><button type="button" class="flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition bg-[var(--background)] border-[var(--border)] text-[var(--muted-foreground)] hover:border-amber-500/40">
+          <span class="text-[11px] font-bold ">Fri</span>
+          <span class="text-xl my-1">⛅</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">13°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">1% ☔ • 15 kph</div>
+        </button></div>
+    </section>
+
+    <!-- THE FOUR CATS GRID -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+      <!-- CAT 1: TEMPERATURE -->
+      <article class="bg-[var(--card)] border border-[var(--border)] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between transition hover:border-amber-500/40">
+        <div>
+          <!-- Card Header -->
+          <div class="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-500">Cat #1 • Temperature</span>
+              <h3 id="cat1Name" class="text-sm font-bold text-[var(--foreground)]">Mittens the Purr-mometer</h3>
+            </div>
+            <span class="text-lg">🌡️</span>
+          </div>
+
+          <!-- Visual SVG Stage -->
+          <div id="cat1Stage" class="cat-stage h-56 flex items-center justify-center relative overflow-hidden p-3" style="background: linear-gradient(rgba(96, 165, 250, 0.2) 0%, rgba(147, 197, 253, 0.1) 100%);">
+            <div id="cat1SvgContainer" class="w-48 h-48 flex items-center justify-center">
+      <svg viewBox="0 0 200 200" class="w-full h-full anim-float" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background props -->
+        
+
+        <!-- Ground shadow -->
+        <ellipse cx="100" cy="176" rx="54" ry="9" fill="rgba(0,0,0,0.16)"></ellipse>
+
+        <!-- Tail -->
+        <path d="M138 148 Q168 140 164 115" stroke="#f97316" stroke-width="12" stroke-linecap="round" fill="none"></path>
+
+        <!-- Body / Outfit by temperature tier -->
+        
+          <!-- Chunky Knit Sweater -->
+          <path d="M58 106 Q100 98 142 106 L146 166 Q100 172 54 166 Z" fill="#dc2626" stroke="#991b1b" stroke-width="3"></path>
+          <!-- Knit pattern -->
+          <path d="M65 130 L135 130 M65 145 L135 145" stroke="#fecaca" stroke-width="2.5" stroke-dasharray="6 6"></path>
+        
+
+        <!-- Cat Ears -->
+        <polygon points="62,62 54,26 86,46" fill="#fb923c" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"></polygon>
+        <polygon points="64,56 59,34 80,47" fill="#fda4af"></polygon>
+        <polygon points="138,62 146,26 114,46" fill="#fb923c" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"></polygon>
+        <polygon points="136,56 141,34 120,47" fill="#fda4af"></polygon>
+
+        <!-- Cat Head -->
+        <ellipse cx="100" cy="76" rx="42" ry="35" fill="#fb923c" stroke="#c2410c" stroke-width="3"></ellipse>
+        <!-- Tabby stripes on forehead -->
+        <path d="M92 46 L94 56 M100 44 L100 56 M108 46 L106 56" stroke="#c2410c" stroke-width="3" stroke-linecap="round"></path>
+
+        <!-- Cheeks -->
+        <ellipse cx="72" cy="84" rx="7" ry="4.5" fill="#fb7185" opacity="0.6"></ellipse>
+        <ellipse cx="128" cy="84" rx="7" ry="4.5" fill="#fb7185" opacity="0.6"></ellipse>
+
+        <!-- Eyes / Sunglasses -->
+        
+          <!-- Expressive Cat Eyes -->
+          <circle cx="82" cy="72" r="6.5" fill="#1e293b"></circle>
+          <circle cx="80" cy="70" r="2.2" fill="#ffffff"></circle>
+          <circle cx="118" cy="72" r="6.5" fill="#1e293b"></circle>
+          <circle cx="116" cy="70" r="2.2" fill="#ffffff"></circle>
+        
+
+        <!-- Nose & Mouth -->
+        <polygon points="96,81 104,81 100,86" fill="#f43f5e"></polygon>
+        
+          <!-- Classic cute :3 cat smile -->
+          <path d="M90 88 Q95 94 100 88 Q105 94 110 88" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+        
+
+        <!-- Whiskers -->
+        <g stroke="#7c2d12" stroke-width="2" stroke-linecap="round">
+          <line x1="46" y1="78" x2="64" y2="80"></line>
+          <line x1="48" y1="86" x2="64" y2="85"></line>
+          <line x1="154" y1="78" x2="136" y2="80"></line>
+          <line x1="152" y1="86" x2="136" y2="85"></line>
+        </g>
+
+        <!-- Headgear & Held Props -->
+        
+          <!-- Cozy Scarf around neck -->
+          <rect x="64" y="98" width="72" height="16" rx="8" fill="#f59e0b" stroke="#b45309" stroke-width="2"></rect>
+          <rect x="110" y="106" width="16" height="32" rx="6" fill="#f59e0b" stroke="#b45309" stroke-width="2"></rect>
+        
+      </svg></div>
+            <span id="cat1OutfitBadge" class="absolute bottom-2.5 right-2.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-black/50 text-white backdrop-blur-sm">Wool Sweater &amp; Scarf</span>
+          </div>
+        </div>
+
+        <!-- Actual Readings Underneath -->
+        <div class="p-4 border-t border-[var(--border)] bg-[var(--background)]/40">
+          <div class="flex items-baseline justify-between">
+            <div>
+              <div id="cat1MainStat" class="text-3xl font-black tracking-tight text-[var(--foreground)]">10°C</div>
+              <div id="cat1SubStat" class="text-xs font-medium text-[var(--muted-foreground)] mt-0.5">High: 10°C • Low: 2°C</div>
+            </div>
+            <div class="text-right">
+              <span id="cat1FeelsLike" class="text-xs font-semibold px-2 py-1 rounded-lg bg-amber-500/15 text-amber-500 border border-amber-500/30">Feels 10°C</span>
+            </div>
+          </div>
+          <p id="cat1ActionText" class="mt-2.5 text-xs text-[var(--muted-foreground)] leading-relaxed border-t border-[var(--border)] pt-2">Wearing a thick cable-knit turtleneck and ear muffs with warm tea.</p>
+        </div>
+      </article>
+
+      <!-- CAT 2: PROBABILITY OF RAIN -->
+      <article class="bg-[var(--card)] border border-[var(--border)] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between transition hover:border-sky-500/40">
+        <div>
+          <!-- Card Header -->
+          <div class="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-sky-500">Cat #2 • Rain Chance</span>
+              <h3 id="cat2Name" class="text-sm font-bold text-[var(--foreground)]">Barnaby Puddle-Paws</h3>
+            </div>
+            <span class="text-lg">☔</span>
+          </div>
+
+          <!-- Visual SVG Stage -->
+          <div id="cat2Stage" class="cat-stage h-56 flex items-center justify-center relative overflow-hidden p-3" style="background: linear-gradient(rgba(56, 189, 248, 0.12) 0%, rgba(251, 191, 36, 0.12) 100%);">
+            <div id="cat2SvgContainer" class="w-48 h-48 flex items-center justify-center">
+      <svg viewBox="0 0 200 200" class="w-full h-full anim-float" xmlns="http://www.w3.org/2000/svg">
+        <!-- Falling Raindrops when rainProb >= 25 -->
+        
+        
+
+        <!-- Puddle or Dry Shadow at bottom -->
+        
+          <ellipse cx="100" cy="176" rx="54" ry="9" fill="rgba(0,0,0,0.15)"></ellipse>
+        
+
+        <!-- Umbrella Canopy Behind/Above if raincoat or downpour -->
+        
+
+        <!-- Gray Tuxedo Cat Ears -->
+        <polygon points="64,70 56,36 86,54" fill="#64748b" stroke="#334155" stroke-width="3" stroke-linejoin="round"></polygon>
+        <polygon points="66,64 61,43 81,55" fill="#fda4af"></polygon>
+        <polygon points="136,70 144,36 114,54" fill="#64748b" stroke="#334155" stroke-width="3" stroke-linejoin="round"></polygon>
+        <polygon points="134,64 139,43 119,55" fill="#fda4af"></polygon>
+
+        <!-- Rain Hat (Sou'wester) when rainy -->
+        
+
+        <!-- Cat Head -->
+        <ellipse cx="100" cy="82" rx="40" ry="33" fill="#64748b" stroke="#334155" stroke-width="3"></ellipse>
+        <!-- White tuxedo muzzle patch -->
+        <ellipse cx="100" cy="92" rx="22" ry="16" fill="#f8fafc"></ellipse>
+
+        <!-- Eyes -->
+        <circle cx="83" cy="78" r="6" fill="#fef08a" stroke="#1e293b" stroke-width="1.5"></circle>
+        <circle cx="83" cy="78" r="3" fill="#1e293b"></circle>
+        <circle cx="117" cy="78" r="6" fill="#fef08a" stroke="#1e293b" stroke-width="1.5"></circle>
+        <circle cx="117" cy="78" r="3" fill="#1e293b"></circle>
+
+        <!-- Snorkel goggles in heavy downpour -->
+        
+
+        <!-- Pink Nose & Smile -->
+        <polygon points="96,86 104,86 100,91" fill="#fb7185"></polygon>
+        <path d="M91 93 Q95 98 100 93 Q105 98 109 93" stroke="#1e293b" stroke-width="2.2" fill="none" stroke-linecap="round"></path>
+
+        <!-- Body / Outfit by rain tier -->
+        
+          <!-- Tuxedo chest -->
+          <path d="M66 110 Q100 104 134 110 L138 156 L62 156 Z" fill="#64748b" stroke="#334155" stroke-width="3"></path>
+          <ellipse cx="100" cy="128" rx="16" ry="18" fill="#f8fafc"></ellipse>
+          <!-- Cardboard Box in front -->
+          <rect x="48" y="130" width="104" height="44" rx="4" fill="#d97706" stroke="#92400e" stroke-width="3"></rect>
+          <polygon points="48,130 34,142 54,146 60,130" fill="#f59e0b" stroke="#92400e" stroke-width="2"></polygon>
+          <polygon points="152,130 166,142 146,146 140,130" fill="#f59e0b" stroke="#92400e" stroke-width="2"></polygon>
+          <text x="100" y="157" text-anchor="middle" fill="#78350f" font-size="12" font-weight="bold" font-family="sans-serif">100% DRY BOX</text>
+          <!-- Yarn ball -->
+          <circle cx="158" cy="166" r="11" fill="#ec4899" stroke="#9d174d" stroke-width="2"></circle>
+        
+      </svg></div>
+            <span id="cat2OutfitBadge" class="absolute bottom-2.5 right-2.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-black/50 text-white backdrop-blur-sm">Cardboard Box</span>
+          </div>
+        </div>
+
+        <!-- Actual Readings Underneath -->
+        <div class="p-4 border-t border-[var(--border)] bg-[var(--background)]/40">
+          <div class="flex items-baseline justify-between">
+            <div>
+              <div id="cat2MainStat" class="text-3xl font-black tracking-tight text-[var(--foreground)]">3%</div>
+              <div id="cat2SubStat" class="text-xs font-medium text-[var(--muted-foreground)] mt-0.5">Mostly dry paws today</div>
+            </div>
+            <div class="text-right">
+              <span id="cat2PrecipMm" class="text-xs font-semibold px-2 py-1 rounded-lg bg-sky-500/15 text-sky-500 border border-sky-500/30">0 mm</span>
+            </div>
+          </div>
+          <p id="cat2ActionText" class="mt-2.5 text-xs text-[var(--muted-foreground)] leading-relaxed border-t border-[var(--border)] pt-2">Sitting snugly inside a 100% dry cardboard box playing with yarn!</p>
+        </div>
+      </article>
+
+      <!-- CAT 3: WIND SPEED -->
+      <article class="bg-[var(--card)] border border-[var(--border)] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between transition hover:border-teal-500/40">
+        <div>
+          <!-- Card Header -->
+          <div class="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-teal-500">Cat #3 • Wind Speed</span>
+              <h3 id="cat3Name" class="text-sm font-bold text-[var(--foreground)]">Captain Whisker-Gust</h3>
+            </div>
+            <span class="text-lg">💨</span>
+          </div>
+
+          <!-- Visual SVG Stage -->
+          <div id="cat3Stage" class="cat-stage h-56 flex items-center justify-center relative overflow-hidden p-3" style="background: linear-gradient(rgba(45, 212, 191, 0.18) 0%, rgba(16, 185, 129, 0.1) 100%);">
+            <div id="cat3SvgContainer" class="w-48 h-48 flex items-center justify-center">
+      <svg viewBox="0 0 200 200" class="w-full h-full anim-float" xmlns="http://www.w3.org/2000/svg">
+        <!-- Animated Wind Streaks -->
+        
+          <g class="anim-wind-1" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" fill="none">
+            <path d="M18 46 L78 46"></path>
+            <path d="M30 118 L92 118"></path>
+          </g>
+          <g class="anim-wind-2" stroke="#99f6e4" stroke-width="2.5" stroke-linecap="round" fill="none">
+            <path d="M44 30 L115 30"></path>
+            <path d="M14 82 L68 82"></path>
+          </g>
+        
+
+        <ellipse cx="100" cy="176" rx="54" ry="9" fill="rgba(0,0,0,0.15)"></ellipse>
+
+        
+          <!-- Normal Upright Cream/Siamese Cat for Calm, Breezy, Windy -->
+          <!-- Tail -->
+          <path d="M132 152 Q166 142 172 114" stroke="#fde68a" stroke-width="12" stroke-linecap="round" fill="none"></path>
+
+          <!-- Body -->
+          <path d="M62 110 Q100 104 138 110 L142 166 Q100 172 58 166 Z" fill="#fef3c7" stroke="#d97706" stroke-width="3"></path>
+
+          <!-- Ears (flattened back if windy) -->
+          
+            <polygon points="62,64 54,30 84,48" fill="#78350f" stroke="#451a03" stroke-width="2.5"></polygon>
+            <polygon points="138,64 146,30 116,48" fill="#78350f" stroke="#451a03" stroke-width="2.5"></polygon>
+          
+
+          <!-- Head -->
+          <ellipse cx="100" cy="78" rx="40" ry="33" fill="#fef3c7" stroke="#d97706" stroke-width="3"></ellipse>
+          <!-- Siamese chocolate face mask -->
+          <ellipse cx="100" cy="82" rx="25" ry="19" fill="#78350f"></ellipse>
+
+          <!-- Aviator Goggles when Windy -->
+          
+
+          <!-- Eyes (Closed peacefully if calm, bright blue otherwise) -->
+          
+            <circle cx="84" cy="78" r="6" fill="#38bdf8"></circle>
+            <circle cx="82" cy="76" r="2" fill="#ffffff"></circle>
+            <circle cx="116" cy="78" r="6" fill="#38bdf8"></circle>
+            <circle cx="114" cy="76" r="2" fill="#ffffff"></circle>
+          
+
+          <!-- Nose & Mouth -->
+          <polygon points="96,86 104,86 100,90" fill="#fb7185"></polygon>
+          <path d="M92 92 Q100 97 108 92" stroke="#fef3c7" stroke-width="2.2" fill="none" stroke-linecap="round"></path>
+
+          <!-- Flowing Scarf in Breezy or Windy -->
+          
+            <rect x="64" y="102" width="72" height="14" rx="7" fill="#14b8a6" stroke="#0f766e" stroke-width="2"></rect>
+            <path d="M126 108 Q162 100 184 92 L180 112 Q154 118 126 116 Z" fill="#14b8a6" stroke="#0f766e" stroke-width="2"></path>
+          
+
+          <!-- Pinwheel in Breezy -->
+          
+            <line x1="48" y1="112" x2="48" y2="164" stroke="#94a3b8" stroke-width="3"></line>
+            <g class="anim-spin" style="transform-origin: 48px 112px;">
+              <polygon points="48,112 34,98 48,94" fill="#f43f5e"></polygon>
+              <polygon points="48,112 62,98 66,112" fill="#facc15"></polygon>
+              <polygon points="48,112 62,126 48,130" fill="#38bdf8"></polygon>
+              <polygon points="48,112 34,126 30,112" fill="#a855f7"></polygon>
+              <circle cx="48" cy="112" r="3.5" fill="#ffffff"></circle>
+            </g>
+          
+
+          <!-- Diamond Kite in Windy -->
+          
+        
+      </svg></div>
+            <span id="cat3OutfitBadge" class="absolute bottom-2.5 right-2.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-black/50 text-white backdrop-blur-sm">Scarf &amp; Pinwheel</span>
+          </div>
+        </div>
+
+        <!-- Actual Readings Underneath -->
+        <div class="p-4 border-t border-[var(--border)] bg-[var(--background)]/40">
+          <div class="flex items-baseline justify-between">
+            <div>
+              <div id="cat3MainStat" class="text-3xl font-black tracking-tight text-[var(--foreground)]">18 kph</div>
+              <div id="cat3SubStat" class="text-xs font-medium text-[var(--muted-foreground)] mt-0.5">Gusts up to 44 kph</div>
+            </div>
+            <div class="text-right">
+              <span id="cat3Beaufort" class="text-xs font-semibold px-2 py-1 rounded-lg bg-teal-500/15 text-teal-500 border border-teal-500/30">Gentle Breeze</span>
+            </div>
+          </div>
+          <p id="cat3ActionText" class="mt-2.5 text-xs text-[var(--muted-foreground)] leading-relaxed border-t border-[var(--border)] pt-2">Wearing a long striped scarf that flutters gently while holding a pinwheel.</p>
+        </div>
+      </article>
+
+      <!-- CAT 4: SKY CONDITION -->
+      <article class="bg-[var(--card)] border border-[var(--border)] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between transition hover:border-purple-500/40">
+        <div>
+          <!-- Card Header -->
+          <div class="px-4 py-3 border-b border-[var(--border)] flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-purple-500">Cat #4 • Sky Condition</span>
+              <h3 id="cat4Name" class="text-sm font-bold text-[var(--foreground)]">Luna Sky-Watcher</h3>
+            </div>
+            <span id="cat4HeaderIcon" class="text-lg">☁️</span>
+          </div>
+
+          <!-- Visual SVG Stage -->
+          <div id="cat4Stage" class="cat-stage h-56 flex items-center justify-center relative overflow-hidden p-3" style="background: linear-gradient(rgba(148, 163, 184, 0.26) 0%, rgba(100, 116, 139, 0.16) 100%);">
+            <div id="cat4SvgContainer" class="w-48 h-48 flex items-center justify-center">
+      <svg viewBox="0 0 200 200" class="w-full h-full anim-float" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sky Background Elements -->
+        
+
+        
+          <!-- Fluffy Sky Cloud -->
+          <g fill="#cbd5e1" stroke="#94a3b8" stroke-width="2">
+            <circle cx="52" cy="42" r="16"></circle>
+            <circle cx="72" cy="36" r="20"></circle>
+            <circle cx="94" cy="44" r="15"></circle>
+            <rect x="48" y="42" width="48" height="16" rx="8" stroke="none"></rect>
+          </g>
+        
+
+        
+
+        <!-- Ground / Beach Towel / Cloud Cushion -->
+        
+          <ellipse cx="100" cy="176" rx="58" ry="10" fill="rgba(0,0,0,0.16)"></ellipse>
+        
+
+        <!-- Calico / Lavender Cat Body -->
+        <path d="M62 110 Q100 104 138 110 L142 166 Q100 172 58 166 Z" fill="#f5f3ff" stroke="#4c1d95" stroke-width="3"></path>
+        <!-- Calico spots -->
+        
+          <circle cx="78" cy="134" r="12" fill="#f97316"></circle>
+          <circle cx="122" cy="144" r="11" fill="#334155"></circle>
+        
+
+        <!-- Cat Ears -->
+        <polygon points="62,64 54,30 84,48" fill="#f97316" stroke="#4c1d95" stroke-width="3" stroke-linejoin="round"></polygon>
+        <polygon points="138,64 146,30 116,48" fill="#334155" stroke="#4c1d95" stroke-width="3" stroke-linejoin="round"></polygon>
+
+        <!-- Cat Head -->
+        <ellipse cx="100" cy="78" rx="40" ry="33" fill="#f5f3ff" stroke="#4c1d95" stroke-width="3"></ellipse>
+        <path d="M62 68 Q75 45 95 50 Q82 70 62 68 Z" fill="#f97316"></path>
+
+        <!-- Mode-specific Headwear -->
+        
+          <!-- Fluffy Cloud Hat on Head -->
+          <g fill="#ffffff" stroke="#94a3b8" stroke-width="2">
+            <circle cx="82" cy="44" r="13"></circle>
+            <circle cx="100" cy="38" r="16"></circle>
+            <circle cx="118" cy="44" r="13"></circle>
+          </g>
+        
+
+        <!-- Eyes when not wearing heart sunglasses -->
+        
+          <circle cx="83" cy="76" r="6" fill="#1e293b"></circle>
+          <circle cx="81" cy="74" r="2.2" fill="#ffffff"></circle>
+          <circle cx="117" cy="76" r="6" fill="#1e293b"></circle>
+          <circle cx="115" cy="74" r="2.2" fill="#ffffff"></circle>
+        
+
+        <!-- Nose & Smile -->
+        <polygon points="96,84 104,84 100,89" fill="#fb7185"></polygon>
+        <path d="M91 91 Q95 96 100 91 Q105 96 109 91" stroke="#1e293b" stroke-width="2.2" fill="none" stroke-linecap="round"></path>
+
+        <!-- Foreground Fluffy Cloud if Partly Cloudy or Foggy -->
+        
+      </svg></div>
+            <span id="cat4OutfitBadge" class="absolute bottom-2.5 right-2.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-black/50 text-white backdrop-blur-sm">Fluffy Cloud Hat</span>
+          </div>
+        </div>
+
+        <!-- Actual Readings Underneath -->
+        <div class="p-4 border-t border-[var(--border)] bg-[var(--background)]/40">
+          <div class="flex items-baseline justify-between">
+            <div>
+              <div id="cat4MainStat" class="text-2xl font-black tracking-tight text-[var(--foreground)]">Cloudy &amp; Overcast</div>
+              <div id="cat4SubStat" class="text-xs font-medium text-[var(--muted-foreground)] mt-0.5">Cloud cover: 88%</div>
+            </div>
+            <div class="text-right">
+              <span id="cat4UvBadge" class="text-xs font-semibold px-2 py-1 rounded-lg bg-purple-500/15 text-purple-500 border border-purple-500/30">UV Index 2</span>
+            </div>
+          </div>
+          <p id="cat4ActionText" class="mt-2.5 text-xs text-[var(--muted-foreground)] leading-relaxed border-t border-[var(--border)] pt-2">Wearing a puffy cloud hat and reading a book atop a soft gray cloud pillow.</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- DAILY FELINE SUMMARY BANNER -->
+    <footer class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🐱</span>
+        <div>
+          <span class="font-bold text-[var(--foreground)]">FourCats Daily Briefing:</span>
+          <span id="felineBriefing" class="text-[var(--muted-foreground)] ml-1">In Toronto, it's 10°C (wool sweater &amp; scarf), 3% rain chance, with 18 kph winds and cloudy &amp; overcast skies.</span>
+        </div>
+      </div>
+      <div class="text-[11px] text-[var(--muted-foreground)] shrink-0">
+        Units: <strong>°C</strong> &amp; <strong>kph</strong> • Auto-updates daily
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. BUILT-IN WORLD CITIES & DAILY DETERMINISTIC WEATHER ENGINE
+    //    (Used both for instant startup & seamless fallback if CSP blocks fetch)
+    // =========================================================================
+    const KNOWN_CITIES = {
+      "toronto":   { name: "Toronto, Canada", lat: 43.65, lon: -79.38, baseTemp: 14, tempRange: 9, rainBias: 30, windBase: 19 },
+      "vancouver": { name: "Vancouver, Canada", lat: 49.28, lon: -123.12, baseTemp: 13, tempRange: 6, rainBias: 55, windBase: 16 },
+      "montreal":  { name: "Montreal, Canada", lat: 45.50, lon: -73.57, baseTemp: 12, tempRange: 10, rainBias: 35, windBase: 18 },
+      "new york":  { name: "New York, USA", lat: 40.71, lon: -74.01, baseTemp: 17, tempRange: 8, rainBias: 30, windBase: 18 },
+      "chicago":   { name: "Chicago, USA", lat: 41.88, lon: -87.63, baseTemp: 14, tempRange: 9, rainBias: 32, windBase: 28 },
+      "miami":     { name: "Miami, USA", lat: 25.76, lon: -80.19, baseTemp: 29, tempRange: 5, rainBias: 48, windBase: 21 },
+      "seattle":   { name: "Seattle, USA", lat: 47.61, lon: -122.33, baseTemp: 13, tempRange: 6, rainBias: 62, windBase: 15 },
+      "london":    { name: "London, UK", lat: 51.51, lon: -0.13, baseTemp: 14, tempRange: 6, rainBias: 52, windBase: 20 },
+      "paris":     { name: "Paris, France", lat: 48.86, lon: 2.35, baseTemp: 16, tempRange: 7, rainBias: 35, windBase: 15 },
+      "berlin":    { name: "Berlin, Germany", lat: 52.52, lon: 13.40, baseTemp: 13, tempRange: 8, rainBias: 38, windBase: 19 },
+      "tokyo":     { name: "Tokyo, Japan", lat: 35.68, lon: 139.77, baseTemp: 19, tempRange: 7, rainBias: 34, windBase: 16 },
+      "sydney":    { name: "Sydney, Australia", lat: -33.87, lon: 151.21, baseTemp: 23, tempRange: 7, rainBias: 25, windBase: 22 },
+      "reykjavik": { name: "Reykjavik, Iceland", lat: 64.15, lon: -21.94, baseTemp: 3, tempRange: 5, rainBias: 60, windBase: 36 },
+      "cairo":     { name: "Cairo, Egypt", lat: 30.04, lon: 31.24, baseTemp: 31, tempRange: 9, rainBias: 5, windBase: 17 },
+      "singapore": { name: "Singapore", lat: 1.35, lon: 103.82, baseTemp: 31, tempRange: 4, rainBias: 65, windBase: 14 },
+      "oslo":      { name: "Oslo, Norway", lat: 59.91, lon: 10.75, baseTemp: 6, tempRange: 7, rainBias: 45, windBase: 18 },
+      "mexico city": { name: "Mexico City, Mexico", lat: 19.43, lon: -99.13, baseTemp: 22, tempRange: 9, rainBias: 30, windBase: 13 }
+    };
+
+    // Safe storage helpers
+    function loadSavedHome() {
+      try {
+        const saved = localStorage.getItem("weather_fourcats_home");
+        if (saved) return JSON.parse(saved);
+      } catch (e) {}
+      return { name: "Toronto, Canada", query: "Toronto", lat: 43.65, lon: -79.38 };
+    }
+
+    function saveHomeLocation(locObj) {
+      try {
+        localStorage.setItem("weather_fourcats_home", JSON.stringify(locObj));
+      } catch (e) {}
+    }
+
+    // Hash helper for deterministic daily weather per city & date
+    function seededHash(str) {
+      let h = 2166136261 >>> 0;
+      for (let i = 0; i < str.length; i++) {
+        h ^= str.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+      }
+      return (h >>> 0) / 4294967295;
+    }
+
+    function generateDailyForecastForCity(cityQuery) {
+      const key = cityQuery.trim().toLowerCase();
+      let profile = KNOWN_CITIES[key];
+      if (!profile) {
+        // Create a realistic profile for any user-typed city name
+        const h1 = seededHash(key + "_base");
+        const h2 = seededHash(key + "_rain");
+        const formatted = cityQuery.trim().replace(/\b\w/g, c => c.toUpperCase());
+        profile = {
+          name: formatted,
+          lat: 40,
+          lon: -75,
+          baseTemp: Math.round(-2 + h1 * 34),
+          tempRange: 7,
+          rainBias: Math.round(10 + h2 * 65),
+          windBase: Math.round(8 + seededHash(key + "_wind") * 32)
+        };
+      }
+
+      const days = [];
+      const now = new Date();
+      for (let i = 0; i < 7; i++) {
+        const d = new Date(now);
+        d.setDate(now.getDate() + i);
+        const dateIso = d.toISOString().slice(0, 10);
+        const r1 = seededHash(profile.name + "_" + dateIso + "_t");
+        const r2 = seededHash(profile.name + "_" + dateIso + "_p");
+        const r3 = seededHash(profile.name + "_" + dateIso + "_w");
+        const r4 = seededHash(profile.name + "_" + dateIso + "_s");
+
+        const tempMax = Math.round(profile.baseTemp + (r1 - 0.45) * 12);
+        const tempMin = Math.round(tempMax - profile.tempRange - r2 * 3);
+        const rainProb = Math.min(100, Math.max(0, Math.round(profile.rainBias + (r2 - 0.5) * 65)));
+        const windKph = Math.max(3, Math.round(profile.windBase + (r3 - 0.4) * 28));
+
+        let weatherCode = 0;
+        if (tempMax <= 0 && rainProb > 45) {
+          weatherCode = 71; // Snow
+        } else if (rainProb >= 80 && windKph >= 32) {
+          weatherCode = 95; // Thunderstorm
+        } else if (rainProb >= 55) {
+          weatherCode = 61; // Rain
+        } else if (rainProb >= 35) {
+          weatherCode = 3;  // Overcast
+        } else if (r4 > 0.82) {
+          weatherCode = 45; // Fog
+        } else if (rainProb >= 15 || r4 > 0.45) {
+          weatherCode = 2;  // Partly cloudy
+        } else {
+          weatherCode = 0;  // Sunny
+        }
+
+        const precipMm = rainProb > 20 ? +( (rainProb / 100) * (2 + r2 * 14) ).toFixed(1) : 0.0;
+
+        days.push({
+          dateIso,
+          tempMax,
+          tempMin,
+          rainProb,
+          precipMm,
+          windKph,
+          windGustKph: Math.round(windKph * 1.35 + 4),
+          weatherCode
+        });
+      }
+
+      return {
+        locationName: profile.name,
+        query: cityQuery.trim(),
+        isLiveApi: false,
+        days
+      };
+    }
+
+    // Try live Open-Meteo API first; fallback cleanly if CSP blocks external network
+    async function fetchWeatherForCity(cityQuery) {
+      const key = cityQuery.trim().toLowerCase();
+      let lat = null, lon = null, resolvedName = cityQuery.trim();
+
+      if (KNOWN_CITIES[key]) {
+        lat = KNOWN_CITIES[key].lat;
+        lon = KNOWN_CITIES[key].lon;
+        resolvedName = KNOWN_CITIES[key].name;
+      }
+
+      try {
+        if (lat === null || lon === null) {
+          const geoRes = await fetch(
+            `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(cityQuery.trim())}&count=1&language=en&format=json`
+          );
+          if (geoRes.ok) {
+            const geoData = await geoRes.json();
+            if (geoData.results && geoData.results.length > 0) {
+              const top = geoData.results[0];
+              lat = top.latitude;
+              lon = top.longitude;
+              resolvedName = top.country ? `${top.name}, ${top.country}` : top.name;
+            }
+          }
+        }
+
+        if (lat !== null && lon !== null) {
+          const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_speed_10m_max,wind_gusts_10m_max&timezone=auto&wind_speed_unit=kmh&temperature_unit=celsius`;
+          const wxRes = await fetch(url);
+          if (wxRes.ok) {
+            const wx = await wxRes.json();
+            if (wx.daily && wx.daily.time) {
+              const days = wx.daily.time.slice(0, 7).map((dateIso, idx) => ({
+                dateIso,
+                tempMax: Math.round(wx.daily.temperature_2m_max[idx]),
+                tempMin: Math.round(wx.daily.temperature_2m_min[idx]),
+                rainProb: Math.round(wx.daily.precipitation_probability_max?.[idx] ?? 0),
+                precipMm: +(wx.daily.precipitation_sum?.[idx] ?? 0).toFixed(1),
+                windKph: Math.round(wx.daily.wind_speed_10m_max[idx]),
+                windGustKph: Math.round(wx.daily.wind_gusts_10m_max?.[idx] ?? wx.daily.wind_speed_10m_max[idx] * 1.3),
+                weatherCode: wx.daily.weather_code[idx]
+              }));
+              return {
+                locationName: resolvedName,
+                query: cityQuery.trim(),
+                isLiveApi: true,
+                days
+              };
+            }
+          }
+        }
+      } catch (err) {
+        // Fallback to deterministic daily generator
+      }
+
+      return generateDailyForecastForCity(cityQuery);
+    }
+
+    // =========================================================================
+    // 2. EXPRESSIVE CARTOON CAT SVG GENERATORS (4 CATS)
+    // =========================================================================
+
+    // CAT 1: TEMPERATURE CAT ("Mittens the Purr-mometer")
+    function renderTemperatureCat(tempC) {
+      let tier = "mild";
+      let outfitBadge = "Cozy Hoodie";
+      let actionDesc = "Wearing a comfy knit sweater and enjoying the pleasant temperature.";
+      let stageBg = "linear-gradient(180deg, rgba(245,158,11,0.16) 0%, rgba(16,185,129,0.10) 100%)";
+
+      if (tempC <= 0) {
+        tier = "freezing";
+        outfitBadge = "Arctic Parka & Cocoa";
+        actionDesc = "Bundled in a fluffy winter parka & pom-pom beanie, shivering with hot cocoa!";
+        stageBg = "linear-gradient(180deg, rgba(56,189,248,0.25) 0%, rgba(186,230,253,0.15) 100%)";
+      } else if (tempC <= 11) {
+        tier = "cold";
+        outfitBadge = "Wool Sweater & Scarf";
+        actionDesc = "Wearing a thick cable-knit turtleneck and ear muffs with warm tea.";
+        stageBg = "linear-gradient(180deg, rgba(96,165,250,0.20) 0%, rgba(147,197,253,0.10) 100%)";
+      } else if (tempC <= 21) {
+        tier = "mild";
+        outfitBadge = "Comfy Hoodie";
+        actionDesc = "Wearing a stylish hoodie and stretching happily in the mild air.";
+        stageBg = "linear-gradient(180deg, rgba(52,211,153,0.18) 0%, rgba(251,191,36,0.12) 100%)";
+      } else if (tempC <= 28) {
+        tier = "warm";
+        outfitBadge = "Aloha Shirt & Shades";
+        actionDesc = "Rocking a breezy Hawaiian shirt and sunglasses while sipping iced lemonade.";
+        stageBg = "linear-gradient(180deg, rgba(251,191,36,0.24) 0%, rgba(249,115,22,0.12) 100%)";
+      } else {
+        tier = "hot";
+        outfitBadge = "Sun Visor & Popsicle";
+        actionDesc = "Chilling with a fish-popsicle, retro shades, and a mini fan to beat the heat!";
+        stageBg = "linear-gradient(180deg, rgba(249,115,22,0.28) 0%, rgba(239,68,68,0.16) 100%)";
+      }
+
+      const animClass = tier === "freezing" ? "anim-shiver" : "anim-float";
+
+      const svg = `
+      <svg viewBox="0 0 200 200" class="w-full h-full ${animClass}" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background props -->
+        ${tier === "freezing" ? `
+          <g class="anim-snow-1" fill="#e0f2fe">
+            <circle cx="32" cy="36" r="3.5"/><circle cx="165" cy="45" r="3"/><circle cx="50" cy="130" r="2.5"/>
+          </g>
+          <g class="anim-snow-2" fill="#bae6fd">
+            <circle cx="145" cy="28" r="3.5"/><circle cx="28" cy="95" r="3"/><circle cx="172" cy="115" r="3"/>
+          </g>
+        ` : ""}
+
+        <!-- Ground shadow -->
+        <ellipse cx="100" cy="176" rx="54" ry="9" fill="rgba(0,0,0,0.16)"/>
+
+        <!-- Tail -->
+        <path d="M138 148 Q168 140 164 115" stroke="#f97316" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+        <!-- Body / Outfit by temperature tier -->
+        ${tier === "freezing" ? `
+          <!-- Big Puffy Winter Parka -->
+          <rect x="52" y="102" width="96" height="66" rx="30" fill="#0284c7" stroke="#0369a1" stroke-width="3"/>
+          <line x1="56" y1="125" x2="144" y2="125" stroke="#0369a1" stroke-width="2.5"/>
+          <line x1="56" y1="146" x2="144" y2="146" stroke="#0369a1" stroke-width="2.5"/>
+          <line x1="100" y1="105" x2="100" y2="168" stroke="#e0f2fe" stroke-width="3"/>
+          <!-- Fluffy Parka Hood Fur Rim -->
+          <ellipse cx="100" cy="78" rx="54" ry="44" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="3"/>
+        ` : tier === "cold" ? `
+          <!-- Chunky Knit Sweater -->
+          <path d="M58 106 Q100 98 142 106 L146 166 Q100 172 54 166 Z" fill="#dc2626" stroke="#991b1b" stroke-width="3"/>
+          <!-- Knit pattern -->
+          <path d="M65 130 L135 130 M65 145 L135 145" stroke="#fecaca" stroke-width="2.5" stroke-dasharray="6 6"/>
+        ` : tier === "mild" ? `
+          <!-- Cozy Mint Hoodie -->
+          <path d="M60 108 Q100 100 140 108 L144 166 Q100 172 56 166 Z" fill="#10b981" stroke="#047857" stroke-width="3"/>
+          <!-- Hoodie strings & pocket -->
+          <path d="M90 112 L90 132 M110 112 L110 132" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M76 144 L124 144 L128 164 L72 164 Z" fill="#059669"/>
+        ` : tier === "warm" ? `
+          <!-- Bright Aloha Shirt -->
+          <path d="M60 108 Q100 100 140 108 L144 166 Q100 172 56 166 Z" fill="#ec4899" stroke="#be185d" stroke-width="3"/>
+          <!-- Flowers on shirt -->
+          <circle cx="80" cy="134" r="5" fill="#fef08a"/><circle cx="118" cy="128" r="5" fill="#fef08a"/><circle cx="98" cy="152" r="5" fill="#fef08a"/>
+          <!-- V-neck collar -->
+          <polygon points="88,106 100,126 112,106" fill="#fed7aa"/>
+        ` : `
+          <!-- Hot Day: Striped Swim Trunks & Pool Float Ring -->
+          <path d="M64 108 Q100 102 136 108 L138 164 Q100 170 62 164 Z" fill="#fb923c" stroke="#ea580c" stroke-width="2.5"/>
+          <ellipse cx="100" cy="128" rx="18" ry="16" fill="#ffedd5"/>
+          <!-- Inflatable Pink Flamingo/Donut Ring -->
+          <ellipse cx="100" cy="154" rx="56" ry="18" fill="#f43f5e" stroke="#be123c" stroke-width="3"/>
+          <ellipse cx="100" cy="151" rx="26" ry="7" fill="#fda4af"/>
+        `}
+
+        <!-- Cat Ears -->
+        <polygon points="62,62 54,26 86,46" fill="#fb923c" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="64,56 59,34 80,47" fill="#fda4af"/>
+        <polygon points="138,62 146,26 114,46" fill="#fb923c" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="136,56 141,34 120,47" fill="#fda4af"/>
+
+        <!-- Cat Head -->
+        <ellipse cx="100" cy="76" rx="42" ry="35" fill="#fb923c" stroke="#c2410c" stroke-width="3"/>
+        <!-- Tabby stripes on forehead -->
+        <path d="M92 46 L94 56 M100 44 L100 56 M108 46 L106 56" stroke="#c2410c" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Cheeks -->
+        <ellipse cx="72" cy="84" rx="7" ry="4.5" fill="#fb7185" opacity="0.6"/>
+        <ellipse cx="128" cy="84" rx="7" ry="4.5" fill="#fb7185" opacity="0.6"/>
+
+        <!-- Eyes / Sunglasses -->
+        ${tier === "warm" || tier === "hot" ? `
+          <!-- Cool Sunglasses -->
+          <rect x="68" y="64" width="27" height="17" rx="4" fill="#1e293b" stroke="#f8fafc" stroke-width="2"/>
+          <rect x="105" y="64" width="27" height="17" rx="4" fill="#1e293b" stroke="#f8fafc" stroke-width="2"/>
+          <line x1="95" y1="71" x2="105" y2="71" stroke="#f8fafc" stroke-width="2.5"/>
+          <line x1="72" y1="68" x2="80" y2="76" stroke="#38bdf8" stroke-width="2"/>
+          <line x1="109" y1="68" x2="117" y2="76" stroke="#38bdf8" stroke-width="2"/>
+        ` : `
+          <!-- Expressive Cat Eyes -->
+          <circle cx="82" cy="72" r="6.5" fill="#1e293b"/>
+          <circle cx="80" cy="70" r="2.2" fill="#ffffff"/>
+          <circle cx="118" cy="72" r="6.5" fill="#1e293b"/>
+          <circle cx="116" cy="70" r="2.2" fill="#ffffff"/>
+        `}
+
+        <!-- Nose & Mouth -->
+        <polygon points="96,81 104,81 100,86" fill="#f43f5e"/>
+        ${tier === "freezing" ? `
+          <!-- Shivering wavy mouth -->
+          <path d="M90 92 Q95 88 100 92 Q105 96 110 92" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        ` : tier === "hot" ? `
+          <!-- Happy panting mouth with little tongue -->
+          <path d="M92 87 Q100 95 108 87" stroke="#1e293b" stroke-width="2.5" fill="none"/>
+          <ellipse cx="100" cy="93" rx="4.5" ry="5.5" fill="#fb7185"/>
+        ` : `
+          <!-- Classic cute :3 cat smile -->
+          <path d="M90 88 Q95 94 100 88 Q105 94 110 88" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        `}
+
+        <!-- Whiskers -->
+        <g stroke="#7c2d12" stroke-width="2" stroke-linecap="round">
+          <line x1="46" y1="78" x2="64" y2="80"/>
+          <line x1="48" y1="86" x2="64" y2="85"/>
+          <line x1="154" y1="78" x2="136" y2="80"/>
+          <line x1="152" y1="86" x2="136" y2="85"/>
+        </g>
+
+        <!-- Headgear & Held Props -->
+        ${tier === "freezing" ? `
+          <!-- Knit Beanie with Pom-Pom -->
+          <path d="M62 56 Q100 24 138 56 Z" fill="#ef4444" stroke="#991b1b" stroke-width="2.5"/>
+          <rect x="60" y="50" width="80" height="10" rx="5" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+          <circle cx="100" cy="28" r="9" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+          <!-- Hot Cocoa Mug -->
+          <rect x="86" y="128" width="28" height="30" rx="5" fill="#b91c1c" stroke="#ffffff" stroke-width="2"/>
+          <path d="M114 134 Q123 134 123 143 Q123 152 114 152" stroke="#ffffff" stroke-width="3" fill="none"/>
+          <path class="anim-steam" d="M95 123 Q92 115 97 109 M105 123 Q108 115 103 109" stroke="#ffffff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        ` : tier === "cold" ? `
+          <!-- Cozy Scarf around neck -->
+          <rect x="64" y="98" width="72" height="16" rx="8" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+          <rect x="110" y="106" width="16" height="32" rx="6" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+        ` : tier === "warm" ? `
+          <!-- Iced Lemonade Glass with Straw -->
+          <rect x="132" y="124" width="22" height="30" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+          <line x1="143" y1="124" x2="150" y2="108" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+        ` : tier === "hot" ? `
+          <!-- Sun Visor & Melting Fish Popsicle + Mini Spinning Fan -->
+          <path d="M62 52 Q100 38 138 52 L148 58 Q100 48 52 58 Z" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+          <!-- Popsicle in left paw -->
+          <line x1="48" y1="142" x2="48" y2="158" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+          <rect x="38" y="114" width="20" height="30" rx="10" fill="#38bdf8" stroke="#0284c7" stroke-width="2"/>
+          <!-- Handheld Fan in right paw -->
+          <circle cx="156" cy="126" r="15" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+          <g class="anim-spin-fast" style="transform-origin: 156px 126px;">
+            <ellipse cx="156" cy="117" rx="4" ry="8" fill="#0ea5e9"/>
+            <ellipse cx="164" cy="131" rx="8" ry="4" fill="#0ea5e9"/>
+            <ellipse cx="148" cy="131" rx="8" ry="4" fill="#0ea5e9"/>
+          </g>
+        ` : ""}
+      </svg>`;
+
+      return { svg, outfitBadge, actionDesc, stageBg };
+    }
+
+    // CAT 2: RAIN PROBABILITY CAT ("Barnaby Puddle-Paws")
+    function renderRainCat(rainProb) {
+      let tier = "dry";
+      let outfitBadge = "Cardboard Box";
+      let actionDesc = "Sitting snugly inside a 100% dry cardboard box playing with yarn!";
+      let stageBg = "linear-gradient(180deg, rgba(56,189,248,0.12) 0%, rgba(251,191,36,0.12) 100%)";
+
+      if (rainProb >= 75) {
+        tier = "downpour";
+        outfitBadge = "Snorkel & Duck Floatie";
+        actionDesc = "Full rain slicker & ducky floatie with an umbrella in heavy splashy puddles!";
+        stageBg = "linear-gradient(180deg, rgba(30,58,138,0.38) 0%, rgba(2,132,199,0.25) 100%)";
+      } else if (rainProb >= 41) {
+        tier = "raincoat";
+        outfitBadge = "Yellow Slicker & Umbrella";
+        actionDesc = "Wearing a bright yellow fisherman raincoat & holding an open red umbrella!";
+        stageBg = "linear-gradient(180deg, rgba(14,165,233,0.26) 0%, rgba(59,130,246,0.18) 100%)";
+      } else if (rainProb >= 16) {
+        tier = "boots";
+        outfitBadge = "Tiny Rain Boots";
+        actionDesc = "Wearing yellow rain boots and carrying a folded umbrella just in case.";
+        stageBg = "linear-gradient(180deg, rgba(56,189,248,0.18) 0%, rgba(148,163,184,0.14) 100%)";
+      }
+
+      const svg = `
+      <svg viewBox="0 0 200 200" class="w-full h-full anim-float" xmlns="http://www.w3.org/2000/svg">
+        <!-- Falling Raindrops when rainProb >= 25 -->
+        ${rainProb >= 25 ? `
+          <g class="anim-rain-1" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round">
+            <line x1="34" y1="22" x2="30" y2="34"/>
+            <line x1="162" y1="28" x2="158" y2="40"/>
+            <line x1="65" y1="16" x2="61" y2="28"/>
+          </g>
+          <g class="anim-rain-2" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round">
+            <line x1="134" y1="18" x2="130" y2="30"/>
+            <line x1="48" y1="54" x2="44" y2="66"/>
+            <line x1="172" y1="68" x2="168" y2="80"/>
+          </g>
+        ` : ""}
+        ${rainProb >= 65 ? `
+          <g class="anim-rain-3" stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round">
+            <line x1="22" y1="44" x2="18" y2="58"/>
+            <line x1="95" y1="12" x2="91" y2="26"/>
+            <line x1="150" y1="52" x2="146" y2="66"/>
+          </g>
+        ` : ""}
+
+        <!-- Puddle or Dry Shadow at bottom -->
+        ${rainProb >= 41 ? `
+          <ellipse cx="100" cy="176" rx="68" ry="11" fill="#0284c7" opacity="0.45"/>
+          <ellipse cx="100" cy="176" rx="46" ry="6" fill="none" stroke="#bae6fd" stroke-width="1.5"/>
+        ` : `
+          <ellipse cx="100" cy="176" rx="54" ry="9" fill="rgba(0,0,0,0.15)"/>
+        `}
+
+        <!-- Umbrella Canopy Behind/Above if raincoat or downpour -->
+        ${tier === "raincoat" || tier === "downpour" ? `
+          <!-- Umbrella stick -->
+          <line x1="134" y1="42" x2="134" y2="140" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+          <path d="M134 140 Q134 149 125 149" stroke="#ef4444" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- Red polka-dot umbrella dome -->
+          <path d="M68 48 Q134 4 190 48 Z" fill="#ef4444" stroke="#991b1b" stroke-width="3"/>
+          <circle cx="110" cy="34" r="4" fill="#fee2e2"/>
+          <circle cx="136" cy="28" r="4" fill="#fee2e2"/>
+          <circle cx="160" cy="36" r="4" fill="#fee2e2"/>
+        ` : ""}
+
+        <!-- Gray Tuxedo Cat Ears -->
+        <polygon points="64,70 56,36 86,54" fill="#64748b" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="66,64 61,43 81,55" fill="#fda4af"/>
+        <polygon points="136,70 144,36 114,54" fill="#64748b" stroke="#334155" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="134,64 139,43 119,55" fill="#fda4af"/>
+
+        <!-- Rain Hat (Sou'wester) when rainy -->
+        ${tier === "raincoat" || tier === "downpour" ? `
+          <path d="M52 58 Q100 22 148 58 Z" fill="#facc15" stroke="#ca8a04" stroke-width="2.5"/>
+          <ellipse cx="100" cy="58" rx="54" ry="9" fill="#fde047" stroke="#ca8a04" stroke-width="2.5"/>
+        ` : ""}
+
+        <!-- Cat Head -->
+        <ellipse cx="100" cy="82" rx="40" ry="33" fill="#64748b" stroke="#334155" stroke-width="3"/>
+        <!-- White tuxedo muzzle patch -->
+        <ellipse cx="100" cy="92" rx="22" ry="16" fill="#f8fafc"/>
+
+        <!-- Eyes -->
+        <circle cx="83" cy="78" r="6" fill="#fef08a" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="83" cy="78" r="3" fill="#1e293b"/>
+        <circle cx="117" cy="78" r="6" fill="#fef08a" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="117" cy="78" r="3" fill="#1e293b"/>
+
+        <!-- Snorkel goggles in heavy downpour -->
+        ${tier === "downpour" ? `
+          <rect x="70" y="68" width="60" height="20" rx="8" fill="rgba(56,189,248,0.35)" stroke="#0284c7" stroke-width="3"/>
+        ` : ""}
+
+        <!-- Pink Nose & Smile -->
+        <polygon points="96,86 104,86 100,91" fill="#fb7185"/>
+        <path d="M91 93 Q95 98 100 93 Q105 98 109 93" stroke="#1e293b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+        <!-- Body / Outfit by rain tier -->
+        ${tier === "dry" ? `
+          <!-- Tuxedo chest -->
+          <path d="M66 110 Q100 104 134 110 L138 156 L62 156 Z" fill="#64748b" stroke="#334155" stroke-width="3"/>
+          <ellipse cx="100" cy="128" rx="16" ry="18" fill="#f8fafc"/>
+          <!-- Cardboard Box in front -->
+          <rect x="48" y="130" width="104" height="44" rx="4" fill="#d97706" stroke="#92400e" stroke-width="3"/>
+          <polygon points="48,130 34,142 54,146 60,130" fill="#f59e0b" stroke="#92400e" stroke-width="2"/>
+          <polygon points="152,130 166,142 146,146 140,130" fill="#f59e0b" stroke="#92400e" stroke-width="2"/>
+          <text x="100" y="157" text-anchor="middle" fill="#78350f" font-size="12" font-weight="bold" font-family="sans-serif">100% DRY BOX</text>
+          <!-- Yarn ball -->
+          <circle cx="158" cy="166" r="11" fill="#ec4899" stroke="#9d174d" stroke-width="2"/>
+        ` : tier === "boots" ? `
+          <!-- Tuxedo Body + Yellow Rain Boots -->
+          <path d="M64 110 Q100 104 136 110 L138 160 Q100 164 62 160 Z" fill="#64748b" stroke="#334155" stroke-width="3"/>
+          <ellipse cx="100" cy="132" rx="18" ry="20" fill="#f8fafc"/>
+          <!-- Bright Yellow Rain Boots -->
+          <rect x="68" y="152" width="22" height="22" rx="5" fill="#facc15" stroke="#ca8a04" stroke-width="2.5"/>
+          <rect x="110" y="152" width="22" height="22" rx="5" fill="#facc15" stroke="#ca8a04" stroke-width="2.5"/>
+        ` : `
+          <!-- Full Yellow Fisherman Raincoat -->
+          <path d="M58 108 Q100 102 142 108 L148 164 Q100 170 52 164 Z" fill="#facc15" stroke="#ca8a04" stroke-width="3"/>
+          <line x1="100" y1="108" x2="100" y2="166" stroke="#ca8a04" stroke-width="2.5"/>
+          <circle cx="94" cy="124" r="3" fill="#713f12"/>
+          <circle cx="94" cy="140" r="3" fill="#713f12"/>
+          <circle cx="94" cy="156" r="3" fill="#713f12"/>
+          <!-- Rain Boots -->
+          <rect x="68" y="158" width="20" height="16" rx="4" fill="#ef4444" stroke="#991b1b" stroke-width="2"/>
+          <rect x="112" y="158" width="20" height="16" rx="4" fill="#ef4444" stroke="#991b1b" stroke-width="2"/>
+          ${tier === "downpour" ? `
+            <!-- Rubber Ducky Floatie in Downpour -->
+            <ellipse cx="100" cy="154" rx="54" ry="13" fill="#fde047" stroke="#ca8a04" stroke-width="2.5"/>
+            <circle cx="148" cy="142" r="11" fill="#fde047" stroke="#ca8a04" stroke-width="2.5"/>
+            <polygon points="157,140 166,143 157,146" fill="#f97316"/>
+          ` : ""}
+        `}
+      </svg>`;
+
+      return { svg, outfitBadge, actionDesc, stageBg };
+    }
+
+    // CAT 3: WIND SPEED CAT ("Captain Whisker-Gust")
+    function renderWindCat(windKph) {
+      let tier = "calm";
+      let outfitBadge = "Peaceful Nap";
+      let actionDesc = "Whiskers completely still while napping with a floating soap bubble.";
+      let beaufort = "Calm Air";
+      let stageBg = "linear-gradient(180deg, rgba(20,184,166,0.14) 0%, rgba(99,102,241,0.10) 100%)";
+
+      if (windKph > 45) {
+        tier = "gale";
+        outfitBadge = "Holding Lamppost!";
+        actionDesc = "Clinging onto a lamppost with cape and whiskers blown sideways in the gale!";
+        beaufort = "Strong Gale";
+        stageBg = "linear-gradient(180deg, rgba(13,148,136,0.30) 0%, rgba(71,85,105,0.25) 100%)";
+      } else if (windKph >= 26) {
+        tier = "windy";
+        outfitBadge = "Goggles & Kite";
+        actionDesc = "Wearing vintage aviator goggles & leaning into the wind while flying a kite!";
+        beaufort = "Fresh Wind";
+        stageBg = "linear-gradient(180deg, rgba(20,184,166,0.22) 0%, rgba(56,189,248,0.16) 100%)";
+      } else if (windKph >= 11) {
+        tier = "breezy";
+        outfitBadge = "Scarf & Pinwheel";
+        actionDesc = "Wearing a long striped scarf that flutters gently while holding a pinwheel.";
+        beaufort = "Gentle Breeze";
+        stageBg = "linear-gradient(180deg, rgba(45,212,191,0.18) 0%, rgba(16,185,129,0.10) 100%)";
+      }
+
+      const svg = `
+      <svg viewBox="0 0 200 200" class="w-full h-full anim-float" xmlns="http://www.w3.org/2000/svg">
+        <!-- Animated Wind Streaks -->
+        ${windKph >= 11 ? `
+          <g class="anim-wind-1" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round" fill="none">
+            <path d="M18 46 L78 46"/>
+            <path d="M30 118 L92 118"/>
+          </g>
+          <g class="anim-wind-2" stroke="#99f6e4" stroke-width="2.5" stroke-linecap="round" fill="none">
+            <path d="M44 30 L115 30"/>
+            <path d="M14 82 L68 82"/>
+          </g>
+        ` : ""}
+
+        <ellipse cx="100" cy="176" rx="54" ry="9" fill="rgba(0,0,0,0.15)"/>
+
+        ${tier === "gale" ? `
+          <!-- Lamppost on left that the cat holds onto! -->
+          <rect x="44" y="24" width="10" height="154" rx="4" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+          <circle cx="49" cy="22" r="12" fill="#fef08a" stroke="#ca8a04" stroke-width="2.5"/>
+          <!-- Cat blown horizontally to the right! -->
+          <!-- Red Superhero/Wind Cape streaming right -->
+          <path d="M88 86 Q142 74 184 68 L178 104 Q134 102 88 98 Z" fill="#ef4444" stroke="#991b1b" stroke-width="2.5"/>
+          <!-- Stretched body gripping pole -->
+          <ellipse cx="114" cy="110" rx="38" ry="22" fill="#f8fafc" stroke="#475569" stroke-width="3"/>
+          <!-- Paws gripping pole -->
+          <rect x="48" y="96" width="32" height="10" rx="5" fill="#f8fafc" stroke="#475569" stroke-width="2.5"/>
+          <rect x="48" y="114" width="32" height="10" rx="5" fill="#f8fafc" stroke="#475569" stroke-width="2.5"/>
+          <!-- Tail streaming straight right -->
+          <path d="M150 110 L190 106" stroke="#f8fafc" stroke-width="11" stroke-linecap="round"/>
+          <path d="M150 110 L190 106" stroke="#475569" stroke-width="11" stroke-linecap="round" fill="none" opacity="0.3"/>
+          <!-- Head with wind-flattened ears -->
+          <polygon points="82,66 116,52 98,74" fill="#f8fafc" stroke="#475569" stroke-width="2.5"/>
+          <polygon points="96,66 132,54 112,76" fill="#f8fafc" stroke="#475569" stroke-width="2.5"/>
+          <ellipse cx="88" cy="84" rx="28" ry="24" fill="#f8fafc" stroke="#475569" stroke-width="3"/>
+          <!-- Wide startled eyes -->
+          <circle cx="78" cy="80" r="6" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+          <circle cx="80" cy="80" r="2.5" fill="#1e293b"/>
+          <circle cx="98" cy="80" r="6" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+          <circle cx="100" cy="80" r="2.5" fill="#1e293b"/>
+          <!-- O mouth -->
+          <ellipse cx="88" cy="94" rx="4" ry="5" fill="#fb7185" stroke="#1e293b" stroke-width="2"/>
+        ` : `
+          <!-- Normal Upright Cream/Siamese Cat for Calm, Breezy, Windy -->
+          <!-- Tail -->
+          <path d="M132 152 Q166 142 172 114" stroke="#fde68a" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+          <!-- Body -->
+          <path d="M62 110 Q100 104 138 110 L142 166 Q100 172 58 166 Z" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+
+          <!-- Ears (flattened back if windy) -->
+          ${tier === "windy" ? `
+            <polygon points="68,64 96,42 90,64" fill="#78350f" stroke="#451a03" stroke-width="2.5"/>
+            <polygon points="118,62 152,42 138,68" fill="#78350f" stroke="#451a03" stroke-width="2.5"/>
+          ` : `
+            <polygon points="62,64 54,30 84,48" fill="#78350f" stroke="#451a03" stroke-width="2.5"/>
+            <polygon points="138,64 146,30 116,48" fill="#78350f" stroke="#451a03" stroke-width="2.5"/>
+          `}
+
+          <!-- Head -->
+          <ellipse cx="100" cy="78" rx="40" ry="33" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+          <!-- Siamese chocolate face mask -->
+          <ellipse cx="100" cy="82" rx="25" ry="19" fill="#78350f"/>
+
+          <!-- Aviator Goggles when Windy -->
+          ${tier === "windy" ? `
+            <rect x="62" y="54" width="76" height="14" rx="6" fill="#92400e"/>
+            <circle cx="84" cy="60" r="11" fill="#38bdf8" stroke="#f59e0b" stroke-width="3"/>
+            <circle cx="116" cy="60" r="11" fill="#38bdf8" stroke="#f59e0b" stroke-width="3"/>
+          ` : ""}
+
+          <!-- Eyes (Closed peacefully if calm, bright blue otherwise) -->
+          ${tier === "calm" ? `
+            <path d="M76 78 Q83 84 90 78" stroke="#fef3c7" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+            <path d="M110 78 Q117 84 124 78" stroke="#fef3c7" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+            <!-- Floating soap bubble -->
+            <circle cx="136" cy="72" r="11" fill="rgba(56,189,248,0.28)" stroke="#bae6fd" stroke-width="2"/>
+            <circle cx="132" cy="68" r="2.5" fill="#ffffff"/>
+          ` : `
+            <circle cx="84" cy="78" r="6" fill="#38bdf8"/>
+            <circle cx="82" cy="76" r="2" fill="#ffffff"/>
+            <circle cx="116" cy="78" r="6" fill="#38bdf8"/>
+            <circle cx="114" cy="76" r="2" fill="#ffffff"/>
+          `}
+
+          <!-- Nose & Mouth -->
+          <polygon points="96,86 104,86 100,90" fill="#fb7185"/>
+          <path d="M92 92 Q100 97 108 92" stroke="#fef3c7" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+          <!-- Flowing Scarf in Breezy or Windy -->
+          ${tier === "breezy" || tier === "windy" ? `
+            <rect x="64" y="102" width="72" height="14" rx="7" fill="#14b8a6" stroke="#0f766e" stroke-width="2"/>
+            <path d="M126 108 Q162 100 184 92 L180 112 Q154 118 126 116 Z" fill="#14b8a6" stroke="#0f766e" stroke-width="2"/>
+          ` : ""}
+
+          <!-- Pinwheel in Breezy -->
+          ${tier === "breezy" ? `
+            <line x1="48" y1="112" x2="48" y2="164" stroke="#94a3b8" stroke-width="3"/>
+            <g class="anim-spin" style="transform-origin: 48px 112px;">
+              <polygon points="48,112 34,98 48,94" fill="#f43f5e"/>
+              <polygon points="48,112 62,98 66,112" fill="#facc15"/>
+              <polygon points="48,112 62,126 48,130" fill="#38bdf8"/>
+              <polygon points="48,112 34,126 30,112" fill="#a855f7"/>
+              <circle cx="48" cy="112" r="3.5" fill="#ffffff"/>
+            </g>
+          ` : ""}
+
+          <!-- Diamond Kite in Windy -->
+          ${tier === "windy" ? `
+            <path d="M62 134 Q118 88 164 42" stroke="#cbd5e1" stroke-width="1.8" fill="none" stroke-dasharray="3 3"/>
+            <polygon points="164,18 184,42 164,66 144,42" fill="#f43f5e" stroke="#be123c" stroke-width="2"/>
+            <line x1="164" y1="18" x2="164" y2="66" stroke="#fecdd3" stroke-width="1.5"/>
+            <line x1="144" y1="42" x2="184" y2="42" stroke="#fecdd3" stroke-width="1.5"/>
+          ` : ""}
+        `}
+      </svg>`;
+
+      return { svg, outfitBadge, actionDesc, stageBg, beaufort };
+    }
+
+    // CAT 4: SKY CONDITION CAT ("Luna Sky-Watcher")
+    function renderSkyCat(weatherCode) {
+      let label = "Sunny & Clear";
+      let outfitBadge = "Straw Hat & Shades";
+      let actionDesc = "Sunbathing blissfully on a beach towel wearing heart sunglasses!";
+      let headerIcon = "☀️";
+      let cloudCover = "10%";
+      let uvIndex = "UV Index 7";
+      let stageBg = "linear-gradient(180deg, rgba(250,204,21,0.25) 0%, rgba(56,189,248,0.14) 100%)";
+      let mode = "sunny";
+
+      if (weatherCode === 0 || weatherCode === 1) {
+        mode = "sunny";
+      } else if (weatherCode === 2) {
+        mode = "partly";
+        label = "Partly Cloudy";
+        outfitBadge = "Artist Beret";
+        actionDesc = "Wearing a cute beret and peeking out between fluffy white clouds.";
+        headerIcon = "⛅";
+        cloudCover = "45%";
+        uvIndex = "UV Index 5";
+        stageBg = "linear-gradient(180deg, rgba(168,85,247,0.18) 0%, rgba(250,204,21,0.14) 100%)";
+      } else if (weatherCode === 3) {
+        mode = "cloudy";
+        label = "Cloudy & Overcast";
+        outfitBadge = "Fluffy Cloud Hat";
+        actionDesc = "Wearing a puffy cloud hat and reading a book atop a soft gray cloud pillow.";
+        headerIcon = "☁️";
+        cloudCover = "88%";
+        uvIndex = "UV Index 2";
+        stageBg = "linear-gradient(180deg, rgba(148,163,184,0.26) 0%, rgba(100,116,139,0.16) 100%)";
+      } else if (weatherCode >= 45 && weatherCode <= 48) {
+        mode = "foggy";
+        label = "Foggy & Misty";
+        outfitBadge = "Detective Cap & Lantern";
+        actionDesc = "Dressed as a detective cat holding a glowing lantern to peer through the mist!";
+        headerIcon = "🌫️";
+        cloudCover = "95%";
+        uvIndex = "UV Index 1";
+        stageBg = "linear-gradient(180deg, rgba(148,163,184,0.32) 0%, rgba(71,85,105,0.22) 100%)";
+      } else if (weatherCode >= 71 && weatherCode <= 86) {
+        mode = "snowy";
+        label = "Snowy Skies";
+        outfitBadge = "Ski Goggles & Beanie";
+        actionDesc = "Wearing Alpine ski goggles and building a tiny snow-cat under snowy skies!";
+        headerIcon = "❄️";
+        cloudCover = "90%";
+        uvIndex = "UV Index 2";
+        stageBg = "linear-gradient(180deg, rgba(125,211,252,0.28) 0%, rgba(224,242,254,0.18) 100%)";
+      } else if (weatherCode >= 95) {
+        mode = "stormy";
+        label = "Thunderstorm";
+        outfitBadge = "Thunder Cape";
+        actionDesc = "Wide-eyed in a heroic thunder cape while lightning flashes in the clouds!";
+        headerIcon = "⛈️";
+        cloudCover = "100%";
+        uvIndex = "UV Index 1";
+        stageBg = "linear-gradient(180deg, rgba(88,28,135,0.38) 0%, rgba(30,41,59,0.32) 100%)";
+      } else {
+        mode = "rainy";
+        label = "Rainy Showers";
+        outfitBadge = "Frog Hoodie";
+        actionDesc = "Wearing an adorable green frog-hoodie raincoat under drizzling clouds!";
+        headerIcon = "🌧️";
+        cloudCover = "92%";
+        uvIndex = "UV Index 2";
+        stageBg = "linear-gradient(180deg, rgba(59,130,246,0.25) 0%, rgba(99,102,241,0.16) 100%)";
+      }
+
+      const svg = `
+      <svg viewBox="0 0 200 200" class="w-full h-full anim-float" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sky Background Elements -->
+        ${mode === "sunny" || mode === "partly" ? `
+          <g class="anim-sun" style="transform-origin: 156px 40px;">
+            <circle cx="156" cy="40" r="20" fill="#facc15" stroke="#eab308" stroke-width="2"/>
+            <g stroke="#facc15" stroke-width="3" stroke-linecap="round">
+              <line x1="156" y1="12" x2="156" y2="16"/>
+              <line x1="156" y1="64" x2="156" y2="68"/>
+              <line x1="128" y1="40" x2="132" y2="40"/>
+              <line x1="180" y1="40" x2="184" y2="40"/>
+              <line x1="136" y1="20" x2="140" y2="24"/>
+              <line x1="172" y1="56" x2="176" y2="60"/>
+            </g>
+          </g>
+        ` : ""}
+
+        ${mode === "partly" || mode === "cloudy" || mode === "rainy" || mode === "stormy" ? `
+          <!-- Fluffy Sky Cloud -->
+          <g fill="${mode === "stormy" ? "#475569" : mode === "cloudy" ? "#cbd5e1" : "#f8fafc"}" stroke="#94a3b8" stroke-width="2">
+            <circle cx="52" cy="42" r="16"/>
+            <circle cx="72" cy="36" r="20"/>
+            <circle cx="94" cy="44" r="15"/>
+            <rect x="48" y="42" width="48" height="16" rx="8" stroke="none"/>
+          </g>
+        ` : ""}
+
+        ${mode === "stormy" ? `
+          <!-- Lightning Bolt -->
+          <polygon points="74,56 62,80 74,80 66,104 90,74 76,74" fill="#fde047" stroke="#ca8a04" stroke-width="1.5"/>
+        ` : ""}
+
+        <!-- Ground / Beach Towel / Cloud Cushion -->
+        ${mode === "sunny" ? `
+          <!-- Striped Beach Towel -->
+          <polygon points="34,166 166,166 178,182 22,182" fill="#f43f5e" stroke="#be123c" stroke-width="2"/>
+          <polygon points="60,166 85,166 90,182 55,182" fill="#fef08a"/>
+          <polygon points="115,166 140,166 145,182 110,182" fill="#fef08a"/>
+        ` : `
+          <ellipse cx="100" cy="176" rx="58" ry="10" fill="rgba(0,0,0,0.16)"/>
+        `}
+
+        <!-- Calico / Lavender Cat Body -->
+        <path d="M62 110 Q100 104 138 110 L142 166 Q100 172 58 166 Z" fill="${mode === "rainy" ? "#22c55e" : "#f5f3ff"}" stroke="#4c1d95" stroke-width="3"/>
+        <!-- Calico spots -->
+        ${mode !== "rainy" ? `
+          <circle cx="78" cy="134" r="12" fill="#f97316"/>
+          <circle cx="122" cy="144" r="11" fill="#334155"/>
+        ` : ""}
+
+        <!-- Cat Ears -->
+        <polygon points="62,64 54,30 84,48" fill="#f97316" stroke="#4c1d95" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="138,64 146,30 116,48" fill="#334155" stroke="#4c1d95" stroke-width="3" stroke-linejoin="round"/>
+
+        <!-- Cat Head -->
+        <ellipse cx="100" cy="78" rx="40" ry="33" fill="#f5f3ff" stroke="#4c1d95" stroke-width="3"/>
+        <path d="M62 68 Q75 45 95 50 Q82 70 62 68 Z" fill="#f97316"/>
+
+        <!-- Mode-specific Headwear -->
+        ${mode === "sunny" ? `
+          <!-- Straw Sunhat -->
+          <ellipse cx="100" cy="48" rx="52" ry="10" fill="#fde047" stroke="#ca8a04" stroke-width="2.5"/>
+          <path d="M70 48 Q100 22 130 48 Z" fill="#fde047" stroke="#ca8a04" stroke-width="2.5"/>
+          <path d="M72 46 L128 46" stroke="#f43f5e" stroke-width="4"/>
+          <!-- Heart-shaped Sunglasses -->
+          <path d="M70 72 C70 64, 82 64, 82 72 C82 64, 94 64, 94 72 C94 80, 82 86, 82 86 C82 86, 70 80, 70 72 Z" fill="#ec4899" stroke="#ffffff" stroke-width="1.5"/>
+          <path d="M106 72 C106 64, 118 64, 118 72 C118 64, 130 64, 130 72 C130 80, 118 86, 118 86 C118 86, 106 80, 106 72 Z" fill="#ec4899" stroke="#ffffff" stroke-width="1.5"/>
+        ` : mode === "partly" ? `
+          <!-- Cute Purple Artist Beret -->
+          <ellipse cx="106" cy="44" rx="34" ry="12" transform="rotate(-10 106 44)" fill="#a855f7" stroke="#6b21a8" stroke-width="2.5"/>
+          <line x1="106" y1="32" x2="108" y2="26" stroke="#6b21a8" stroke-width="3" stroke-linecap="round"/>
+        ` : mode === "cloudy" ? `
+          <!-- Fluffy Cloud Hat on Head -->
+          <g fill="#ffffff" stroke="#94a3b8" stroke-width="2">
+            <circle cx="82" cy="44" r="13"/>
+            <circle cx="100" cy="38" r="16"/>
+            <circle cx="118" cy="44" r="13"/>
+          </g>
+        ` : mode === "rainy" ? `
+          <!-- Cute Frog Rain Hoodie Eyes on top of head -->
+          <circle cx="80" cy="44" r="10" fill="#22c55e" stroke="#15803d" stroke-width="2.5"/>
+          <circle cx="80" cy="44" r="4" fill="#1e293b"/>
+          <circle cx="120" cy="44" r="10" fill="#22c55e" stroke="#15803d" stroke-width="2.5"/>
+          <circle cx="120" cy="44" r="4" fill="#1e293b"/>
+        ` : mode === "foggy" ? `
+          <!-- Detective Cap -->
+          <path d="M66 50 Q100 26 134 50 Z" fill="#92400e" stroke="#451a03" stroke-width="2.5"/>
+          <ellipse cx="100" cy="50" rx="44" ry="6" fill="#b45309" stroke="#451a03" stroke-width="2"/>
+          <!-- Glowing Lantern -->
+          <circle cx="154" cy="132" r="14" fill="#fef08a" opacity="0.6"/>
+          <rect x="148" y="124" width="12" height="16" rx="3" fill="#facc15" stroke="#78350f" stroke-width="2"/>
+        ` : ""}
+
+        <!-- Eyes when not wearing heart sunglasses -->
+        ${mode !== "sunny" ? `
+          <circle cx="83" cy="76" r="6" fill="#1e293b"/>
+          <circle cx="81" cy="74" r="2.2" fill="#ffffff"/>
+          <circle cx="117" cy="76" r="6" fill="#1e293b"/>
+          <circle cx="115" cy="74" r="2.2" fill="#ffffff"/>
+        ` : ""}
+
+        <!-- Nose & Smile -->
+        <polygon points="96,84 104,84 100,89" fill="#fb7185"/>
+        <path d="M91 91 Q95 96 100 91 Q105 96 109 91" stroke="#1e293b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+        <!-- Foreground Fluffy Cloud if Partly Cloudy or Foggy -->
+        ${mode === "partly" ? `
+          <g fill="#ffffff" stroke="#cbd5e1" stroke-width="2" opacity="0.92">
+            <circle cx="62" cy="158" r="16"/>
+            <circle cx="88" cy="154" r="20"/>
+            <circle cx="116" cy="156" r="18"/>
+            <circle cx="140" cy="160" r="14"/>
+          </g>
+        ` : mode === "foggy" ? `
+          <g stroke="#cbd5e1" stroke-width="6" stroke-linecap="round" opacity="0.65">
+            <line x1="28" y1="142" x2="140" y2="142"/>
+            <line x1="56" y1="158" x2="172" y2="158"/>
+          </g>
+        ` : mode === "snowy" ? `
+          <!-- Tiny Snow-Cat Companion -->
+          <circle cx="156" cy="156" r="14" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+          <circle cx="156" cy="134" r="10" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+          <polygon points="148,126 146,118 153,124" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+          <polygon points="164,126 166,118 159,124" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+        ` : ""}
+      </svg>`;
+
+      return { svg, label, outfitBadge, actionDesc, headerIcon, cloudCover, uvIndex, stageBg };
+    }
+
+    // Helper for small icon in 7-day strip
+    function getWeatherEmoji(code) {
+      if (code === 0 || code === 1) return "☀️";
+      if (code === 2) return "⛅";
+      if (code === 3) return "☁️";
+      if (code >= 45 && code <= 48) return "🌫️";
+      if (code >= 71 && code <= 86) return "❄️";
+      if (code >= 95) return "⛈️";
+      return "🌧️";
+    }
+
+    // Format day name (Today, Tomorrow, Mon, Tue...)
+    function formatDayLabel(dateIso, index) {
+      if (index === 0) return "Today";
+      if (index === 1) return "Tomorrow";
+      const d = new Date(dateIso + "T12:00:00");
+      return d.toLocaleDateString("en-US", { weekday: "short" });
+    }
+
+    function formatFullDate(dateIso) {
+      const d = new Date(dateIso + "T12:00:00");
+      return d.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" });
+    }
+
+    // =========================================================================
+    // 3. STATE & UI CONTROLLER
+    // =========================================================================
+    let homeLocation = loadSavedHome();
+    let currentForecast = null;
+    let selectedDayIndex = 0;
+
+    function updateHomeIndicators() {
+      const homeLabel = document.getElementById("homeBtnLabel");
+      const shortHome = homeLocation.name.split(",")[0];
+      homeLabel.textContent = `Home (${shortHome})`;
+
+      if (!currentForecast) return;
+      const isCurrentHome =
+        currentForecast.locationName.toLowerCase() === homeLocation.name.toLowerCase() ||
+        currentForecast.query.toLowerCase() === homeLocation.query.toLowerCase();
+
+      const pill = document.getElementById("isHomePill");
+      const setBtnText = document.getElementById("setHomeBtnText");
+      if (isCurrentHome) {
+        pill.classList.remove("hidden");
+        setBtnText.textContent = "Saved as Home";
+      } else {
+        pill.classList.add("hidden");
+        setBtnText.textContent = "Set as Home";
+      }
+    }
+
+    function renderForecastStrip() {
+      const strip = document.getElementById("forecastStrip");
+      strip.innerHTML = "";
+
+      currentForecast.days.forEach((day, idx) => {
+        const active = idx === selectedDayIndex;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `flex flex-col items-center justify-between p-2.5 rounded-xl border text-center transition ${
+          active
+            ? "bg-amber-500/15 border-amber-500 text-[var(--foreground)] shadow-sm"
+            : "bg-[var(--background)] border-[var(--border)] text-[var(--muted-foreground)] hover:border-amber-500/40"
+        }`;
+
+        btn.innerHTML = `
+          <span class="text-[11px] font-bold ${active ? "text-amber-500" : ""}">${formatDayLabel(day.dateIso, idx)}</span>
+          <span class="text-xl my-1">${getWeatherEmoji(day.weatherCode)}</span>
+          <div class="text-xs font-bold text-[var(--foreground)]">${day.tempMax}°C</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">${day.rainProb}% ☔ • ${day.windKph} kph</div>
+        `;
+
+        btn.addEventListener("click", () => {
+          selectedDayIndex = idx;
+          renderForecastStrip();
+          renderDayCats(currentForecast.days[selectedDayIndex]);
+        });
+
+        strip.appendChild(btn);
+      });
+    }
+
+    function renderDayCats(dayData) {
+      // Update Header Date
+      document.getElementById("activeDateLabel").textContent = `• ${formatFullDate(dayData.dateIso)}`;
+
+      // Sync simulator sliders with current day
+      document.getElementById("simTemp").value = dayData.tempMax;
+      document.getElementById("simTempVal").textContent = `${dayData.tempMax}°C`;
+      document.getElementById("simRain").value = dayData.rainProb;
+      document.getElementById("simRainVal").textContent = `${dayData.rainProb}%`;
+      document.getElementById("simWind").value = dayData.windKph;
+      document.getElementById("simWindVal").textContent = `${dayData.windKph} kph`;
+
+      // CAT 1: Temperature
+      const c1 = renderTemperatureCat(dayData.tempMax);
+      document.getElementById("cat1SvgContainer").innerHTML = c1.svg;
+      document.getElementById("cat1Stage").style.background = c1.stageBg;
+      document.getElementById("cat1OutfitBadge").textContent = c1.outfitBadge;
+      document.getElementById("cat1MainStat").textContent = `${dayData.tempMax}°C`;
+      document.getElementById("cat1SubStat").textContent = `High: ${dayData.tempMax}°C • Low: ${dayData.tempMin}°C`;
+      const feels = Math.round(dayData.tempMax - (dayData.windKph > 20 ? 2 : 0) + (dayData.tempMax > 27 ? 2 : 0));
+      document.getElementById("cat1FeelsLike").textContent = `Feels ${feels}°C`;
+      document.getElementById("cat1ActionText").textContent = c1.actionDesc;
+
+      // CAT 2: Probability of Rain
+      const c2 = renderRainCat(dayData.rainProb);
+      document.getElementById("cat2SvgContainer").innerHTML = c2.svg;
+      document.getElementById("cat2Stage").style.background = c2.stageBg;
+      document.getElementById("cat2OutfitBadge").textContent = c2.outfitBadge;
+      document.getElementById("cat2MainStat").textContent = `${dayData.rainProb}%`;
+      document.getElementById("cat2SubStat").textContent =
+        dayData.rainProb >= 60 ? "High chance of rain" : dayData.rainProb >= 25 ? "Possible passing showers" : "Mostly dry paws today";
+      document.getElementById("cat2PrecipMm").textContent = `${dayData.precipMm} mm`;
+      document.getElementById("cat2ActionText").textContent = c2.actionDesc;
+
+      // CAT 3: Wind Speed (kph)
+      const c3 = renderWindCat(dayData.windKph);
+      document.getElementById("cat3SvgContainer").innerHTML = c3.svg;
+      document.getElementById("cat3Stage").style.background = c3.stageBg;
+      document.getElementById("cat3OutfitBadge").textContent = c3.outfitBadge;
+      document.getElementById("cat3MainStat").textContent = `${dayData.windKph} kph`;
+      document.getElementById("cat3SubStat").textContent = `Gusts up to ${dayData.windGustKph} kph`;
+      document.getElementById("cat3Beaufort").textContent = c3.beaufort;
+      document.getElementById("cat3ActionText").textContent = c3.actionDesc;
+
+      // CAT 4: Sky Condition
+      const c4 = renderSkyCat(dayData.weatherCode);
+      document.getElementById("cat4SvgContainer").innerHTML = c4.svg;
+      document.getElementById("cat4Stage").style.background = c4.stageBg;
+      document.getElementById("cat4OutfitBadge").textContent = c4.outfitBadge;
+      document.getElementById("cat4HeaderIcon").textContent = c4.headerIcon;
+      document.getElementById("cat4MainStat").textContent = c4.label;
+      document.getElementById("cat4SubStat").textContent = `Cloud cover: ${c4.cloudCover}`;
+      document.getElementById("cat4UvBadge").textContent = c4.uvIndex;
+      document.getElementById("cat4ActionText").textContent = c4.actionDesc;
+
+      // Daily Feline Briefing summary
+      document.getElementById("felineBriefing").textContent =
+        `In ${currentForecast.locationName.split(",")[0]}, it's ${dayData.tempMax}°C (${c1.outfitBadge.toLowerCase()}), ${dayData.rainProb}% rain chance, with ${dayData.windKph} kph winds and ${c4.label.toLowerCase()} skies.`;
+    }
+
+    async function loadCity(cityQuery) {
+      document.getElementById("currentLocationName").textContent = `Fetching ${cityQuery}...`;
+      const data = await fetchWeatherForCity(cityQuery);
+      currentForecast = data;
+      selectedDayIndex = 0;
+
+      document.getElementById("currentLocationName").textContent = data.locationName;
+      const badge = document.getElementById("dataSourceBadge");
+      if (data.isLiveApi) {
+        badge.textContent = "● Live Daily Weather";
+      } else {
+        badge.textContent = "● Daily Forecast Engine";
+      }
+
+      updateHomeIndicators();
+      renderForecastStrip();
+      renderDayCats(currentForecast.days[0]);
+    }
+
+    // Event Listeners
+    document.getElementById("searchForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const val = document.getElementById("cityInput").value.trim();
+      if (val) {
+        loadCity(val);
+        document.getElementById("cityInput").value = "";
+      }
+    });
+
+    document.querySelectorAll(".quick-city").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        loadCity(btn.getAttribute("data-city"));
+      });
+    });
+
+    document.getElementById("goHomeBtn").addEventListener("click", () => {
+      loadCity(homeLocation.query);
+    });
+
+    document.getElementById("setHomeBtn").addEventListener("click", () => {
+      if (!currentForecast) return;
+      homeLocation = {
+        name: currentForecast.locationName,
+        query: currentForecast.query
+      };
+      saveHomeLocation(homeLocation);
+      updateHomeIndicators();
+    });
+
+    // Sandbox toggle & live slider updates
+    const sandboxPanel = document.getElementById("sandboxPanel");
+    document.getElementById("sandboxToggleBtn").addEventListener("click", () => {
+      sandboxPanel.classList.toggle("hidden");
+    });
+
+    function applySandboxValues() {
+      const tempMax = parseInt(document.getElementById("simTemp").value, 10);
+      const rainProb = parseInt(document.getElementById("simRain").value, 10);
+      const windKph = parseInt(document.getElementById("simWind").value, 10);
+      const weatherCode = parseInt(document.getElementById("simSky").value, 10);
+
+      document.getElementById("simTempVal").textContent = `${tempMax}°C`;
+      document.getElementById("simRainVal").textContent = `${rainProb}%`;
+      document.getElementById("simWindVal").textContent = `${windKph} kph`;
+
+      const baseDay = currentForecast ? currentForecast.days[selectedDayIndex] : { dateIso: new Date().toISOString().slice(0, 10) };
+      renderDayCats({
+        dateIso: baseDay.dateIso,
+        tempMax,
+        tempMin: tempMax - 7,
+        rainProb,
+        precipMm: +(rainProb * 0.08).toFixed(1),
+        windKph,
+        windGustKph: Math.round(windKph * 1.35),
+        weatherCode
+      });
+    }
+
+    ["simTemp", "simRain", "simWind", "simSky"].forEach((id) => {
+      document.getElementById(id).addEventListener("input", applySandboxValues);
+    });
+
+    document.getElementById("resetSandboxBtn").addEventListener("click", () => {
+      if (currentForecast) {
+        renderDayCats(currentForecast.days[selectedDayIndex]);
+      }
+      sandboxPanel.classList.add("hidden");
+    });
+
+    document.getElementById("copyHtmlBtn").addEventListener("click", async () => {
+      const btnText = document.getElementById("copyHtmlBtnText");
+      const themeFallback = `<style>:root{--background:#0f172a;--card:#1e293b;--foreground:#f8fafc;--muted-foreground:#94a3b8;--border:#334155;--accent:#334155}@media(prefers-color-scheme:light){:root{--background:#f8fafc;--card:#ffffff;--foreground:#0f172a;--muted-foreground:#64748b;--border:#e2e8f0;--accent:#f1f5f9}}</style>`;
+      const fullHtml = "<!DOCTYPE html>\n<html>\n<head>\n" + themeFallback + "\n" + document.head.innerHTML + "\n</head>\n<body class=\"" + document.body.className + "\">\n" + document.body.innerHTML + "\n</body>\n</html>";
+      try {
+        await navigator.clipboard.writeText(fullHtml);
+        btnText.textContent = "Copied!";
+      } catch (e) {
+        const ta = document.createElement("textarea");
+        ta.value = fullHtml;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        btnText.textContent = "Copied!";
+      }
+      setTimeout(() => { btnText.textContent = "Copy HTML"; }, 2500);
+    });
+
+    // Initial boot: always open on the user's saved Home city!
+    loadCity(homeLocation.query);
+  </script>
+
+
+<script>(function(){var t=window.tailwind=window.tailwind||{};if(!t.config){t.config={darkMode:'class'};}else if(t.config.darkMode!=='class'){t.config.darkMode='class';}})();</script>
+        <script>
+          (function() {
+            var MAX_HEIGHT = 20000;
+            var MIN_HEIGHT = 24;
+            var SLACK = 4;
+            // Coalescing bounds churn to the refresh rate, so this pair means
+            // "kept changing on a third of the frames for two seconds".
+            var WINDOW_MS = 2000;
+            var MAX_UPDATES_PER_WINDOW = 40;
+            // A runaway loop repeats a few heights; an animation sweeps many.
+            var MAX_DISTINCT_HEIGHTS = 8;
+            var COOLDOWN_MS = 2000;
+            var lastHeight = -1;
+            var updates = [];
+            var frozen = false;
+            var rafId = null;
+
+            function send(rawHeight) {
+              if (frozen) return;
+              var height = Math.ceil(rawHeight);
+              if (!(height > 0)) height = 0;
+              if (height > MAX_HEIGHT) height = MAX_HEIGHT;
+              if (height < MIN_HEIGHT) height = MIN_HEIGHT;
+              // Deadband, not equality: the report carries SLACK, so a widget
+              // tracking the viewport would otherwise creep to the cap.
+              if (Math.abs(height - lastHeight) <= SLACK) return;
+
+              var now = Date.now();
+              updates.push({t: now, h: height});
+              while (updates.length && now - updates[0].t > WINDOW_MS) {
+                updates.shift();
+              }
+              if (updates.length > MAX_UPDATES_PER_WINDOW) {
+                var seen = {};
+                var distinct = 0;
+                for (var j = 0; j < updates.length; j++) {
+                  if (!seen[updates[j].h]) {
+                    seen[updates[j].h] = true;
+                    distinct++;
+                  }
+                }
+                if (distinct <= MAX_DISTINCT_HEIGHTS) {
+                  frozen = true;
+                  updates = [];
+                  // Re-measure on release: the body box may have stopped
+                  // changing only because the frame did, so nothing would fire.
+                  setTimeout(function() {
+                    frozen = false;
+                    measure();
+                  }, COOLDOWN_MS);
+                  return;
+                }
+              }
+
+              lastHeight = height;
+              window.parent.postMessage({ type: 'RESIZE', height: height }, '*');
+            }
+
+            function measure() {
+              var body = document.body;
+              var style = getComputedStyle(body);
+              var margins = (parseFloat(style.marginTop) || 0) +
+                            (parseFloat(style.marginBottom) || 0);
+              // Neither box counts body's own margins. A border is dropped when
+              // children also overflow it, which the slack covers.
+              var content = Math.max(body.scrollHeight, body.offsetHeight) +
+                            margins;
+              send(content + SLACK);
+            }
+
+            var observer = new ResizeObserver(function() {
+              if (rafId) cancelAnimationFrame(rafId);
+              rafId = requestAnimationFrame(function() {
+                rafId = null;
+                measure();
+              });
+            });
+            observer.observe(document.body);
+
+            // The observer misses a late stylesheet that only repaints; these
+            // are no-ops when the height is unchanged.
+            window.addEventListener('load', measure);
+            if (document.fonts && document.fonts.ready) {
+              document.fonts.ready.then(measure);
+            }
+          })();
+        </script>
+      
+        <script>
+          (function() {
+            function sendInteraction(eventType) {
+              window.parent.postMessage({ type: 'USER_INTERACTION', eventType: eventType }, '*');
+            }
+            document.addEventListener('click', function() { sendInteraction('click'); }, true);
+          })();
+        </script>
+      
+</body>
+</html>
